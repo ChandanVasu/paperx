@@ -44,7 +44,7 @@ function vasutheme_register_required_plugins() {
 	$plugins = array(
 
         // array(
-        //     'name'         => 'Vasu Core',
+        //     'name'         => 'Vasu Theme Core',
         //     'slug'         => 'vasutheme-core',
         //     'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
         //     'required'     => true,
