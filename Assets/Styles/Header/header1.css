@@ -50,6 +50,7 @@
   padding-bottom: 8px;
   padding-top: 8px;
   text-decoration: none !important; /* Corrected typo here */
+  text-transform: capitalize;
 }
 
 
