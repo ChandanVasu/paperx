@@ -1,0 +1,46 @@
+/* Custom admin styles */
+body {
+    background-color: #f3f3f3;
+}
+
+.wrap {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ocdi__title-container{
+    display: none;
+}
+
+.ocdi__theme-about, .about-description{
+    display: none;
+}
+
+.ocdi{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.ocdi__gl-item {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.ocdi__gl-item-image{
+    border-radius: 10px;
+}
+
+.ocdi__gl-item-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+

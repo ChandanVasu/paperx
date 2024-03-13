@@ -53,7 +53,8 @@ include_once get_template_directory() . '/Inc/Theme Setting/logo.php';
 include_once get_template_directory() . '/Inc/Theme Setting/single.php';
 include_once get_template_directory() . '/Inc/Theme Setting/footer.php';
 include_once get_template_directory() . '/Inc/Theme Setting/archive.php';
-require_once get_template_directory() . '/Inc/Theme Setting/Plugin/activation.php';
+include_once get_template_directory() . '/Inc/Demo.php';
+
 
 
 
@@ -151,4 +152,14 @@ function wpse196289_default_page_template() {
 add_action('add_meta_boxes', 'wpse196289_default_page_template', 1);
 
 
+
+
+function enqueue_admin_styles() {
+    wp_enqueue_style('admin-styles', get_template_directory_uri() . '/admin-style.css');
+}
+add_action('admin_enqueue_scripts', 'enqueue_admin_styles');
+
+
+
+require_once get_template_directory() . '/Inc/Theme Setting/Plugin/activation.php';
 

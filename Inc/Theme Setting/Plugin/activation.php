@@ -44,7 +44,7 @@ function vasutheme_register_required_plugins() {
 	$plugins = array(
 
         // array(
-        //     'name'         => 'vasu Core',
+        //     'name'         => 'vasutheme Core',
         //     'slug'         => 'vasutheme-core',
         //     'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
         //     'required'     => true,
@@ -54,7 +54,7 @@ function vasutheme_register_required_plugins() {
         array(
             'name'         => 'Elementor Page Builder',
             'slug'         => 'elementor',
-            'required'     => true,
+            'required'     => false,
             'external_url' => 'https://wordpress.org/plugins/elementor/',
         ),
 		array(
@@ -78,7 +78,7 @@ function vasutheme_register_required_plugins() {
 		array(
 			'name'         => 'One Click Demo Import',
 			'slug'         => 'one-click-demo-import',
-			'required'     => true,
+			'required'     => false,
 			'external_url' => 'https://wordpress.org/plugins/one-click-demo-import',
 		),
 

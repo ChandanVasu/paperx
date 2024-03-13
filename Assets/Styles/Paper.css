@@ -21,6 +21,10 @@ font-size: 15px;
    
 }
 
+.admin_menu_sidebar a{
+   text-decoration: none;
+}
+
 #theme_setting_header{
     color: blue;
 }
@@ -40,7 +44,7 @@ display: none; }
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: 600;
 font-size: 20px;
-color: rgba(0, 0, 0, 0.778);
+color: rgba(117, 44, 44, 0.778);
  }
 
 .vasu_theme_setting_admin_menu_body{
