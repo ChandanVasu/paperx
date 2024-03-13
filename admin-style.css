@@ -3,6 +3,16 @@ body {
     background-color: #f3f3f3;
 }
 
+a:focus {
+    outline: none;
+ }
+
+ a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none;
+}
+ 
+
 .wrap {
     padding: 20px;
     background-color: #fff;

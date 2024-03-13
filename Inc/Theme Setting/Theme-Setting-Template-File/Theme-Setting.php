@@ -11,12 +11,13 @@
     <div class='vasu_theme_setting_admin_menu'>
 
         <div class='paper_support_image'>
-            <img src="<?php echo get_template_directory_uri(); ?>/Assets/Image/Paper.jpg" alt="">
+
+        
+        <a href="https://vasutheme.mjnnu.com/" target="_blank" ><img src="<?php echo get_template_directory_uri(); ?>/Assets/Image/Paper.jpg" alt=""></a>
         </div>
         <div class='theme_update_notifiction'>
             <?php
                ?>
-
             </span>
         </div>
         <div class='vasu_theme_setting_admin_menu_body'>
@@ -33,6 +34,7 @@
                 <a href="<?php echo esc_url(home_url('wp-admin/themes.php?page=tgmpa-install-plugins')); ?>">
                     <h1 id="install_plugin">Install Plugin</h1>
                 </a>
+                <a href="https://vasutheme.mjnnu.com/" target="_blank" ><h1 id="theme_setting_archive">Theme Support Form</h1></a>
 
 
 
@@ -116,7 +118,8 @@
 
 
     });
-    document.getElementById("register_theme_logo_submenu").addEventListener("click", function () {
+    document.getElementById("theme_setting_logo_content").addEventListener("click", function () {
+ 
         document.getElementById("theme_setting_header_content").style.display = "none";
         document.getElementById("theme_setting_single_post_content").style.display = "none";
         document.getElementById("theme_setting_logo_content").style.display = "block";

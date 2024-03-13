@@ -14,6 +14,7 @@
 .theme-setting{
    display: none;
 }
+
 .admin_menu_sidebar h1{
    cursor: pointer;
    font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,12 +23,19 @@ font-size: 15px;
 }
 
 .admin_menu_sidebar a{
+   
    text-decoration: none;
 }
 
 #theme_setting_header{
     color: blue;
 }
+
+/* Remove the blue border line on focus */
+a:focus {
+   outline: none;
+}
+
 
 .vasu_theme_setting_admin_menu::-webkit-scrollbar {
 display: none; }
@@ -37,6 +45,7 @@ display: none; }
     height: 200px;
     width: 100%;
     border-radius: 10px;
+    outline: none;
 
  }
 
@@ -53,13 +62,17 @@ color: rgba(0, 0, 0, 0.778);
 
 .admin_menu_sidebar{
    background-color: rgba(182, 240, 215, 0.1);
-   width: 150px;
-   margin-top: 10px;
+   width:250px;
+   margin-top: 20px;
    padding: 20px;
    margin-right: 20px;
    border-radius: 10px;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
+}
+
+.admin_menu_sidebar h1:hover{
+color: blue;
 }
 
 

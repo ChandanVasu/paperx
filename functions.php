@@ -164,41 +164,9 @@ add_action('admin_enqueue_scripts', 'enqueue_admin_styles');
 require_once get_template_directory() . '/Inc/Theme Setting/Plugin/activation.php';
 
 function ocdi_plugin_intro_text( $default_text ) {
-    $default_text .= '<div class="ocdi__intro-text"><p>This is a custom text added to this plugin intro text.</p></div>';
+    $default_text .= '<div class="ocdi__intro-text"><h1>Import Demo Data Vasu Theme.</h1></div>';
  
     return $default_text;
 }
 add_filter( 'ocdi/plugin_intro_text', 'ocdi_plugin_intro_text' );
 
-function ocdi_plugin_page_setup( $default_settings ) {
-    $default_settings['parent_slug'] = 'custom-menu-slug';
-    $default_settings['page_title']  = esc_html__( 'One Click Demo Import' , 'one-click-demo-import' );
-    $default_settings['menu_title']  = esc_html__( 'Import Demo Data' , 'one-click-demo-import' );
-    $default_settings['capability']  = 'import';
-    $default_settings['menu_slug']   = 'one-click-demo-import';
- 
-    return $default_settings;
-}
-add_filter( 'ocdi/plugin_page_setup', 'ocdi_plugin_page_setup' );
-
-// Custom admin menu
-function custom_admin_menu() {
-    add_menu_page(
-        'Custom Menu Title',
-        'Custom Menu Title',
-        'import', // Required capability to access this menu
-        'custom-menu-slug', // Menu slug
-        'custom_menu_callback', // Callback function to render the page
-        'dashicons-admin-generic', // Icon
-        4 // Menu position
-    );
-}
-add_action('admin_menu', 'custom_admin_menu');
-
-// Callback function to render the custom menu page
-function custom_menu_callback() {
-    echo '<div class="wrap">';
-    echo '<h2>Custom Menu Page</h2>';
-    echo '<p>This is a custom menu page content.</p>';
-    echo '</div>';
-}
