@@ -43,18 +43,18 @@ function vasutheme_register_required_plugins() {
 
 	$plugins = array(
 
-        array(
-            'name'         => 'Bizzpro Core',
-            'slug'         => 'vasutheme-core',
-            'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
-            'required'     => true,
-            'version'      => '1.0.0',
+        // array(
+        //     'name'         => 'Vasu Core',
+        //     'slug'         => 'vasutheme-core',
+        //     'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
+        //     'required'     => true,
+        //     'version'      => '1.0.0',
 
-        ),
+        // ),
         array(
             'name'         => 'Elementor Page Builder',
             'slug'         => 'elementor',
-            'required'     => false,
+            'required'     => true,
             'external_url' => 'https://wordpress.org/plugins/elementor/',
         ),
 		array(
@@ -78,7 +78,7 @@ function vasutheme_register_required_plugins() {
 		array(
 			'name'         => 'One Click Demo Import',
 			'slug'         => 'one-click-demo-import',
-			'required'     => false,
+			'required'     => True,
 			'external_url' => 'https://wordpress.org/plugins/one-click-demo-import',
 		),
 
