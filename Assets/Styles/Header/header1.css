@@ -1,0 +1,247 @@
+/* Container styles */
+
+@font-face {
+  font-family: "Batangas";
+  src: url("../../../Font/Batangas.otf");
+
+
+  /* Other font properties (e.g., font-weight, font-style) */
+}
+
+@font-face {
+
+
+  font-family: "Roboto-Bold";
+  src: url("../../../Font/Roboto-Bold.ttf");
+
+
+  /* Other font properties (e.g., font-weight, font-style) */
+}
+
+.vasutheme-header1-container {
+  width: 100%;
+  
+  padding: 0px 80px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  /* Use flexbox to align items horizontally */
+  justify-content: space-between;
+  /* Spread items horizontally */
+  align-items: center;
+  /* Align items vertically */
+
+}
+
+.vasutheme-header1-logo img {
+  height: 50px;
+  width: 150px;
+}
+
+/* Logo link styles */
+.vasutheme-header1-logo-link {
+display: flex;
+  font-size: 35px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-family: 'Batangas';
+
+  /* Red color */
+}
+
+/* Menu styles */
+.vasutheme-header1-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu link styles */
+.vasutheme-header1-menu a {
+  text-decoration: none;
+  color: #333;
+  /* Menu link color */
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.vasutheme-header1-menu a:hover{
+  color: orange;
+}
+
+/* Menu item styles */
+.vasutheme-header1-menu li {
+  
+  display: inline-block;
+  /* Display menu items horizontally */
+  margin-right: 20px;
+  /* Add some space between menu items */
+}
+
+/* Hide sub-menu items by default */
+.vasutheme-header1-menu .sub-menu {
+  display: none;
+  position: absolute;
+  /* Position sub-menu items */
+  margin-top: 0px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  /* Background color for sub-menu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add shadow for sub-menu */
+  z-index: 999;
+  /* Ensure sub-menu appears above other content */
+}
+
+/* Show sub-menu items on hover */
+.vasutheme-header1-menu li:hover .sub-menu {
+  display: block;
+}
+
+/* Style sub-menu list items */
+.vasutheme-header1-menu .sub-menu li {
+  display: block;
+  padding: 10px 10px;
+  margin-right: 0;
+  /* Adjust padding as needed */
+}
+
+/* Style sub-menu links */
+.vasutheme-header1-menu .sub-menu a {
+  text-decoration: none;
+  color: #333
+  /* Sub-menu link color */
+}
+
+/* Hover effect for sub-menu items */
+.vasutheme-header1-menu .sub-menu li:hover {
+  background-color: #82c5c658;
+  border-radius: 5px;
+  /* Change background color on hover */
+}
+
+/* Sub-menu indicator icon */
+/* Sub-menu indicator icon */
+.vasutheme-header1-menu .menu-item-has-children > a::after {
+  content: '';
+  display: inline-block;
+  width: 10px; /* Adjust the width of the image */
+  height: 10px; /* Adjust the height of the image */
+  background-image: url('drop.png'); /* Relative path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 5px; /* Adjust spacing */
+}
+
+
+/* Hide sub-menu items by default */
+
+
+
+.vasu-theme-mobile-menu-header-1 {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .vasutheme-header1-menu {
+    display: none;
+  }
+
+  .header1-search-box{
+    display: none;
+  }
+
+  .vasutheme-header1-container {
+    width: 100%;
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    justify-content: space-between;
+    /* Spread items horizontally */
+    align-items: center;
+  }
+
+  .vasu-theme-mobile-menu-header-1 {
+    display: inline-flex !important;
+    flex-direction: row;
+    
+    /* Hide mobile menu on small screens */
+  }
+
+
+  .mobile-menu-search-box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 21px;
+  
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .vasutheme-header1-menu {
+    display: none;
+  }
+
+  .header1-search-box{
+    /* display: none; */
+  }
+
+  .vasutheme-header1-container {
+    width: 100%;
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    justify-content: space-between;
+    /* Spread items horizontally */
+    align-items: center;
+  }
+
+  .vasu-theme-mobile-menu-header-1 {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: inline-flex !important;
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.image-menu-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.image-menu-close-icon {
+  height: 20px;
+  width: 20px;
+}
+
+
+

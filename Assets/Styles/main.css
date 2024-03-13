@@ -1,0 +1,170 @@
+input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No text decoration */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Cursor pointer */
+  border-radius: 10px; /* Border radius */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+.wpcf7-submit {
+  background-color: var(--primary-color); /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.wpcf7-submit:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+p {
+font-size: 16px;
+margin-bottom: 8px;
+color: #2d2d2d;
+
+}
+
+a {
+  color: #130bff;
+text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fd0000;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px; /* 0.5em */
+  border: 1px solid #ccc;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px; /* 0.5em */
+  margin-bottom: 16px; /* 1em */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; /* 1em */
+}
+
+/* Works on Firefox */
+* {
+  
+    scrollbar-width: 1px;
+    scrollbar-color: rgb(199, 199, 199) rgb(255, 255, 255);
+    z-index: 0;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 25, 25);
+  }
+
+  
+.page_not_vasutheme,
+.page_not_found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    flex-direction: column;
+  }
+ .page_not_found img{
+  height: 50%;
+  width: 50%;
+}
+
+.page_not_found h1{
+  margin-top: 50px;
+}
+.page_not_found h1 a{
+  font-size: 25px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.vasutheme-footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vasutheme-footer{
+    padding: 10px;
+}
+
+
+/* Page Title */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Page Content */
+.page-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.archive-post-grids{
+  width: 1350px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 770px){
+ 
+.archive-post-grids{
+  width: 100%;
+  padding: 10px;
+
+} 
+}
+
+.archive-page-title{
+  text-align: center;
+  margin-top: 10px;
+}

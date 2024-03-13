@@ -1,0 +1,49 @@
+
+
+.el-single-post-content-vasutheme h1, .el-single-post-content-vasutheme h2, .el-single-post-content-vasutheme h3, .el-single-post-content-vasutheme h4, .el-single-post-content-vasutheme h5, .el-single-post-content-vasutheme h6, .el-single-post-content-vasutheme p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+  .social-mededi-icon-share {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .el-social-mededi-icon{
+    background-color: #ffeeef;
+    padding: 5px 30px;
+    border-radius: 8px;
+    /* box-shadow: 1px 1px  black; */
+    width: fit-content;
+  
+  }
+  
+  .social-mededi-icon-share li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  
+  .social-mededi-icon-share li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-mededi-icon-share a {
+    display: block;
+    font-size: 22px;
+    border-radius: 50%;
+    text-shadow: 1px 0px #282828;
+  
+  
+  }
+  
+  
+  @media (max-width: 780px) {
+    .post-share-social-media {
+        padding: 5px 10px;
+        width: max-content;
+        max-width: 100%;
+    }
+  }

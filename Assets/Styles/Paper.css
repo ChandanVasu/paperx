@@ -1,0 +1,92 @@
+.vasu_theme_setting_admin_menu{
+   background-color: rgb(255, 255, 255);
+   margin-right: 20px;
+   padding: 20px;
+   text-align: start;
+   margin-top: 20px;
+   border-radius: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   height: max-content;
+   /* overflow: scroll; */
+
+}
+
+.theme-setting{
+   display: none;
+}
+.admin_menu_sidebar h1{
+   cursor: pointer;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 15px;
+   
+}
+
+#theme_setting_header{
+    color: blue;
+}
+
+.vasu_theme_setting_admin_menu::-webkit-scrollbar {
+display: none; }
+
+
+.paper_support_image img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+
+ }
+
+ .vasu_theme_setting_admin_menu h2{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 600;
+font-size: 20px;
+color: rgba(0, 0, 0, 0.778);
+ }
+
+.vasu_theme_setting_admin_menu_body{
+   display: flex;
+}
+
+.admin_menu_sidebar{
+   background-color: rgba(182, 240, 215, 0.1);
+   width: 150px;
+   margin-top: 10px;
+   padding: 20px;
+   margin-right: 20px;
+   border-radius: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+
+
+.theme_update_notifiction .custom-notice{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(211, 251, 241, 0.715);
+   /* padding: 2px; */
+   border-radius: 10px;
+   margin: 5px;
+ }
+
+ .theme_update_notifiction .custom-notice p{
+   color: black;
+   font-size: 20px;
+   margin: 0;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold;
+
+ }
+
+ .theme_update_notifiction .custom-notice span {
+   text-align: center;
+   margin-top: 2px;
+   margin-bottom: 2px;
+   width: 50%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+ }

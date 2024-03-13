@@ -1,0 +1,106 @@
+/* Default image size */
+.el-l-1-custom-post-item-vasutheme .el-l-1-post-thumbnail-vasutheme img {
+    border-radius: 4px;
+    width: 200px; /* Default width */
+    height: 100px; /* Default height */
+    background-size: cover;
+    max-width: 500px;
+}
+
+/* Adjust image size for mobile devices */
+@media (max-width: 768px) {
+    .el-l-1-custom-post-item-vasutheme .el-l-1-post-thumbnail-vasutheme img {
+     width: 80%;
+        max-width: 200px; /* Adjust height for mobile */
+    }
+}
+
+/* Other styles remain the same */
+.el-l-1-custom-post-item-vasutheme {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+
+.el-l-1-post-meta-item-vasutheme {
+    justify-content: space-evenly;
+    width: max-content;
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.el-l-1-post-meta-vasutheme {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.el-l-1-author-avatar-vasutheme {
+    height: 20px;
+    width: 30px;
+    border-radius: 100% !important;
+    border: solid 1px rgba(22, 69, 224, 0.5) !important;
+}
+
+.el-l-1-category-meta-vasutheme a {
+    color: rgb(12, 26, 227);
+}
+
+.el-l-1-name-meta-vasutheme::before{
+    content: "By - ";
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.el-l-1-name-meta-vasutheme::after{
+    content: " |";
+    margin-left: 3px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.el-l-1-name-meta-vasutheme:hover {
+    text-decoration: underline;
+    color: rgb(229, 11, 11);
+}
+
+.el-l-1-post-meta-vasutheme {
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    bottom: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.el-l-1-post-meta-vasutheme a {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.el-l-1-post-title-vasutheme a {
+    color: var(--text-color);
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.el-l-1-post-title-vasutheme:hover {
+    text-decoration: underline;
+    color: rgb(255, 157, 0);
+    transition: 2;
+}
