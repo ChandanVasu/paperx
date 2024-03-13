@@ -35,7 +35,6 @@
     padding: 12px;
     gap: 5px;
     border-radius: 10px;
-    border: 1px solid var(--border-color);
 }
 .el-g-2-post-thumbnail-vasutheme{
     max-width: 1300px;

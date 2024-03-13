@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Batangas";
-  src: url("../../../Font/Batangas.otf");
+  src: url("../../Font/Batangas.otf");
 
 
   /* Other font properties (e.g., font-weight, font-style) */
@@ -33,6 +33,8 @@
 
 }
 
+
+
 .vasutheme-header1-logo img {
   height: 50px;
   width: 150px;
@@ -40,18 +42,16 @@
 
 /* Logo link styles */
 .vasutheme-header1-logo-link {
-display: flex;
+  font-family: 'Batangas';
+  display: flex;
   font-size: 35px;
-  /* text-transform: uppercase; */
-  text-decoration: none;
   font-weight: bold;
-  color: #000000;
+  color: var(--primary-color); 
   padding-bottom: 8px;
   padding-top: 8px;
-  font-family: 'Batangas';
-
-  /* Red color */
+  text-decoration: none !important; /* Corrected typo here */
 }
+
 
 /* Menu styles */
 .vasutheme-header1-menu {

@@ -14,13 +14,7 @@
 }
 
 
-:root {
-    --background-color: #fff;      /* Background color of each post item */
-    --border-color: #0c52de;       /* Border color of each post item */
-    --text-color: #000000;            /* Text color */
-    --meta-color: #777;            /* Meta information color */
-    --author-color: #ff0000;       /* Author color */
-}
+
 
 /* Grid container */
 .el-g-1-grid-container {
@@ -32,7 +26,7 @@
 
 /* Post title */
 .el-g-1-post-title-vasutheme a {
-    color: var(--text-color);
+    color: #000000;  
     line-height: normal;
     font-size: 20px;
     font-weight: 00;
@@ -48,7 +42,7 @@
 
 .el-g-1-post-title-vasutheme:hover {
     text-decoration: underline;
-    color: rgb(255, 157, 0);
+    color: var(--primary-color);
     transition: 2;
 }
 
@@ -90,10 +84,10 @@
 /* Category */
 .el-g-1-category-meta-vasutheme a {
     position: absolute;
-    color: rgb(255, 255, 255);
+    color: var( --secondary-color);
     padding: 5px 15px;
     border-radius: 40px 10px 40px 10px;
-    background-color: #300fe9;
+    background-color: var(--primary-color);
     font-size: 12px;
     font-family: 'Rubik', sans-serif;
     left: 10px;
@@ -126,7 +120,7 @@
 
 .el-g-1-name-meta-vasutheme:hover {
     text-decoration: underline;
-    color: rgb(229, 11, 11);
+    color: var( --primary-color);
 }
 
 .el-g-1-author-avatar-vasutheme {

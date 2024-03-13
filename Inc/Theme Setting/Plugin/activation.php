@@ -43,14 +43,14 @@ function vasutheme_register_required_plugins() {
 
 	$plugins = array(
 
-        // array(
-        //     'name'         => 'vasutheme Core',
-        //     'slug'         => 'vasutheme-core',
-        //     'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
-        //     'required'     => true,
-        //     'version'      => '1.0.0',
+        array(
+            'name'         => 'Bizzpro Core',
+            'slug'         => 'vasutheme-core',
+            'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
+            'required'     => true,
+            'version'      => '1.0.0',
 
-        // ),
+        ),
         array(
             'name'         => 'Elementor Page Builder',
             'slug'         => 'elementor',
