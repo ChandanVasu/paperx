@@ -64,17 +64,17 @@ function vasutheme_register_required_plugins() {
 			'external_url' => 'http://wordpress.org/plugins/contact-form-7',
 		),
         array(
-			'name'         => 'Happy Addons for Elementor',
-			'slug'         => 'happy-elementor-addons',
+			'name'         => 'Royal Elementor Addons and Templates',
+			'slug'         => 'royal-elementor-addons',
 			'required'     => true,
-			'external_url' => 'https://wordpress.org/plugins/happy-elementor-addons/',
+			'external_url' => 'https://wordpress.org/plugins/royal-elementor-addons/',
 		),
-        array(
-			'name'         => 'Svg Support',
-			'slug'         => 'svg-support',
-			'required'     => false,
-			'external_url' => 'https://wordpress.org/plugins/svg-support/',
-		),
+        // array(
+		// 	'name'         => 'Svg Support',
+		// 	'slug'         => 'svg-support',
+		// 	'required'     => false,
+		// 	'external_url' => 'https://wordpress.org/plugins/svg-support/',
+		// ),
 		array(
 			'name'         => 'One Click Demo Import',
 			'slug'         => 'one-click-demo-import',

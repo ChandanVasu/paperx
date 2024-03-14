@@ -42,10 +42,9 @@
 }
 
 .el-g-2-custom-post-item-vasutheme .el-g-2-post-thumbnail-vasutheme img {
-    border-radius: 10px;
-    background-size: cover;
-    height: 150px;
-    width: 300px;
+    border-radius: 4px;
+    height: 180px;
+    width: 100%;
 
 }
 

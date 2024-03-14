@@ -1,3 +1,5 @@
+#sticky-box{ position: sticky; position: -webkit-sticky; top: 0px; } 
+
 input[type="submit"] {
   background-color: #4CAF50; /* Green background */
   border: none; /* No border */
@@ -126,10 +128,9 @@ select {
 
 .vasutheme-footer{
     text-align: center;
-    margin-top: 20px;
 }
 
-.vasutheme-footer{
+.vasutheme-footer p{
     padding: 10px;
 }
 
