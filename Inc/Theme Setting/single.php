@@ -116,12 +116,12 @@ function theme_setting_single_post() {
                         ?>
                     <div class="radio-item">
                         <label>
-                            <input type="radio" name="single_post_template" value="<?php echo $value; ?>" <?php
-                                checked(get_option('single_post_template'), $value ); ?>>
-                            <img class="radio-image" src="<?php echo $data[1]; ?>" alt="<?php echo $data[0]; ?>">
+                        <input type="radio" name="single_post_template" value="<?php echo esc_attr($value); ?>" <?php checked(get_option('single_post_template'), $value ); ?>>
+                        <img class="radio-image" src="<?php echo esc_url($data[1]); ?>" alt="<?php echo esc_attr($data[0]); ?>">
+
                         </label>
                         <p>
-                            <?php echo $data[0]; ?>
+                            <?php echo esc_attr($data)[0]; ?>
                         </p> <!-- Display the text below the image -->
                     </div>
                     <?php

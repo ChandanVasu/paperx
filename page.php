@@ -27,7 +27,7 @@ get_header();
                     the_content();
 
                     wp_link_pages([
-                        'before' => '<div class="page-links">' . esc_html__('Pages:', 'vasutheme'),
+                        'before' => '<div class="page-links">' . esc_html__('Pages:', 'paperx'),
                         'after'  => '</div>',
                     ]);
                     ?>
@@ -40,7 +40,7 @@ get_header();
                             sprintf(
                                 wp_kses(
                                     /* translators: %s: Name of current post. Only visible to screen readers */
-                                    __('Edit <span class="screen-reader-text">%s</span>', 'vasutheme'),
+                                    __('Edit <span class="screen-reader-text">%s</span>', 'paperx'),
                                     [
                                         'span' => [
                                             'class' => [],

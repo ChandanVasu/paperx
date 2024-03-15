@@ -9,7 +9,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Single Post Content', 'vasutheme' );
+        return __( 'Single Post Content', 'paperx' );
     }
 
     // Widget Icon
@@ -53,7 +53,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
          $this->start_controls_section(
             'typography_style_section',
             [
-                'label' => __( 'Typography Style', 'vasutheme' ),
+                'label' => __( 'Typography Style', 'paperx' ),
                 // 'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -63,7 +63,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'title_typography',
-                'label'    => __( 'Title Typography', 'vasutheme' ),
+                'label'    => __( 'Title Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} h1',
             ]
         );
@@ -73,7 +73,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'h2_typography',
-                'label'    => __( 'Heading 2 Typography', 'vasutheme' ),
+                'label'    => __( 'Heading 2 Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} h2',
             ]
         );
@@ -83,7 +83,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'h3_typography',
-                'label'    => __( 'Heading 3 Typography', 'vasutheme' ),
+                'label'    => __( 'Heading 3 Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} h3',
             ]
         );
@@ -93,7 +93,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'h4_typography',
-                'label'    => __( 'Heading 4 Typography', 'vasutheme' ),
+                'label'    => __( 'Heading 4 Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} h4',
             ]
         );
@@ -103,7 +103,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'h5_typography',
-                'label'    => __( 'Heading 5 Typography', 'vasutheme' ),
+                'label'    => __( 'Heading 5 Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} h5',
             ]
         );
@@ -113,7 +113,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'paragraph_typography',
-                'label'    => __( 'Paragraph Typography', 'vasutheme' ),
+                'label'    => __( 'Paragraph Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} p',
             ]
         );
@@ -123,7 +123,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'link_typography',
-                'label'    => __( 'Link Typography', 'vasutheme' ),
+                'label'    => __( 'Link Typography', 'paperx' ),
                 'selector' => '{{WRAPPER}} a',
             ]
         );
@@ -134,7 +134,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'content_style_section',
             [
-                'label' => __( 'Content Style', 'vasutheme' ),
+                'label' => __( 'Content Style', 'paperx' ),
                 'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -143,7 +143,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_color_h1',
             [
-                'label'     => __( 'H1 Color', 'vasutheme' ),
+                'label'     => __( 'H1 Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} h1' => 'color: {{VALUE}}',
@@ -154,7 +154,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_color_h2',
             [
-                'label'     => __( 'H2 Color', 'vasutheme' ),
+                'label'     => __( 'H2 Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} h2' => 'color: {{VALUE}}',
@@ -165,7 +165,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_color_h3',
             [
-                'label'     => __( 'H3 Color', 'vasutheme' ),
+                'label'     => __( 'H3 Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} h3' => 'color: {{VALUE}}',
@@ -176,7 +176,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_color_h4',
             [
-                'label'     => __( 'H4 Color', 'vasutheme' ),
+                'label'     => __( 'H4 Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} h4' => 'color: {{VALUE}}',
@@ -187,7 +187,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_color_h5',
             [
-                'label'     => __( 'H5 Color', 'vasutheme' ),
+                'label'     => __( 'H5 Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} h5' => 'color: {{VALUE}}',
@@ -198,7 +198,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_color_h6',
             [
-                'label'     => __( 'H6 Color', 'vasutheme' ),
+                'label'     => __( 'H6 Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} h6' => 'color: {{VALUE}}',
@@ -210,7 +210,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'paragraph_color',
             [
-                'label'     => __( 'Paragraph Color', 'vasutheme' ),
+                'label'     => __( 'Paragraph Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} p' => 'color: {{VALUE}}',
@@ -222,7 +222,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'link_color',
             [
-                'label'     => __( 'Link Color', 'vasutheme' ),
+                'label'     => __( 'Link Color', 'paperx' ),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} a' => 'color: {{VALUE}}',
@@ -237,7 +237,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'margin_style_section',
             [
-                'label' => __( 'Margin Style', 'vasutheme' ),
+                'label' => __( 'Margin Style', 'paperx' ),
                 'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -246,7 +246,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'h1_margin',
             [
-                'label' => __( 'Heading 1 Margin', 'vasutheme' ),
+                'label' => __( 'Heading 1 Margin', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -259,7 +259,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'h2_margin',
             [
-                'label' => __( 'Heading 2 Margin', 'vasutheme' ),
+                'label' => __( 'Heading 2 Margin', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -272,7 +272,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'h3_margin',
             [
-                'label' => __( 'Heading 3 Margin', 'vasutheme' ),
+                'label' => __( 'Heading 3 Margin', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -285,7 +285,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'paragraph_margin',
             [
-                'label' => __( 'Paragraph Margin', 'vasutheme' ),
+                'label' => __( 'Paragraph Margin', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -299,7 +299,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'image_style_section',
             [
-                'label' => __( 'Image Style', 'vasutheme' ),
+                'label' => __( 'Image Style', 'paperx' ),
                 'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -308,7 +308,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'image_margin',
             [
-                'label' => __( 'Image Margin', 'vasutheme' ),
+                'label' => __( 'Image Margin', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -320,7 +320,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'image_width',
             [
-                'label' => __( 'Image Width', 'vasutheme' ),
+                'label' => __( 'Image Width', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -340,7 +340,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'image_height',
             [
-                'label' => __( 'Image Height', 'vasutheme' ),
+                'label' => __( 'Image Height', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -361,7 +361,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
     $this->add_control(
         'image_border_radius',
         [
-            'label' => __( 'Image Border Radius', 'vasutheme' ),
+            'label' => __( 'Image Border Radius', 'paperx' ),
             'type' => \Elementor\Controls_Manager::SLIDER,
             'size_units' => [ 'px', '%' ],
             'selectors' => [

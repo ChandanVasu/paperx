@@ -10,7 +10,7 @@ class List_Post_1 extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return __('List Style 1 - vasuthemes', 'vasutheme');
+        return __('List Style 1 - vasuthemes', 'paperx');
     }
 
     // Define widget icon
@@ -147,7 +147,7 @@ class List_Post_1 extends \Elementor\Widget_Base
 </div>
 <?php wp_reset_postdata(); // Reset post data
         else :
-            echo '<div class="el-l-1-no-posts-found">' . __('No posts found', 'vasutheme') . '</div>';
+            echo '<div class="el-l-1-no-posts-found">' . __('No posts found', 'paperx') . '</div>';
         endif;
     }
     
@@ -160,16 +160,16 @@ class List_Post_1 extends \Elementor\Widget_Base
 $this->start_controls_section(
     'section_content',
     [
-        'label' => __('Content', 'vasutheme'),
+        'label' => __('Content', 'paperx'),
     ]
 );
 
 $this->add_control(
     'dynamic_filtering',
     [
-        'label' => __('Current Query', 'vasutheme'),
+        'label' => __('Current Query', 'paperx'),
         'type' => \Elementor\Controls_Manager::SWITCHER,
-        'description' => __('Toggle to Archive Posts based on current query.', 'vasutheme'),
+        'description' => __('Toggle to Archive Posts based on current query.', 'paperx'),
         'default' => 'no',
     ]
 );
@@ -178,9 +178,9 @@ $this->add_control(
 $this->add_control(
     'category',
     [
-        'label' => __('Select Category', 'vasutheme'),
+        'label' => __('Select Category', 'paperx'),
         'type' => \Elementor\Controls_Manager::SELECT2,
-        'description' => __('Select the categories you want to display.', 'vasutheme'),
+        'description' => __('Select the categories you want to display.', 'paperx'),
         'options' => $this->get_all_categories_options(),
         'multiple' => true,
         'condition' => [
@@ -192,9 +192,9 @@ $this->add_control(
 $this->add_control(
     'posts_per_page',
     [
-        'label'   => __('Posts Per Page', 'vasutheme'),
+        'label'   => __('Posts Per Page', 'paperx'),
         'type'    => \Elementor\Controls_Manager::NUMBER,
-        'description' => __('Set the number of posts to display per page.', 'vasutheme'),
+        'description' => __('Set the number of posts to display per page.', 'paperx'),
         'default' => 8, // Default number of posts to display
     ]
 );
@@ -202,9 +202,9 @@ $this->add_control(
 $this->add_control(
     'offset',
     [
-        'label'   => __('Post Offset', 'vasutheme'),
+        'label'   => __('Post Offset', 'paperx'),
         'type'    => \Elementor\Controls_Manager::NUMBER,
-        'description' => __('Set the number of posts to offset.', 'vasutheme'),
+        'description' => __('Set the number of posts to offset.', 'paperx'),
         'default' => 0, // Default offset value
     ]
 );
@@ -212,9 +212,9 @@ $this->add_control(
 $this->add_control(
     'title_length',
     [
-        'label'   => __('Title Length', 'vasutheme'),
+        'label'   => __('Title Length', 'paperx'),
         'type'    => \Elementor\Controls_Manager::NUMBER,
-        'description' => __('Set the maximum length of the title.', 'vasutheme'),
+        'description' => __('Set the maximum length of the title.', 'paperx'),
         'default' => 10, // Default number of words to display in title
     ]
 );
@@ -222,9 +222,9 @@ $this->add_control(
 $this->add_control(
     'content_length',
     [
-        'label'   => __('Content Length', 'vasutheme'),
+        'label'   => __('Content Length', 'paperx'),
         'type'    => \Elementor\Controls_Manager::NUMBER,
-        'description' => __('Set the maximum length of the content.', 'vasutheme'),
+        'description' => __('Set the maximum length of the content.', 'paperx'),
         'default' => 20, // Default number of words to display in content
     ]
 );
@@ -232,9 +232,9 @@ $this->add_control(
 $this->add_responsive_control(
     'items_per_row_desktop',
     [
-        'label'     => __('Items Per Row ', 'vasutheme'),
+        'label'     => __('Items Per Row ', 'paperx'),
         'type'      => \Elementor\Controls_Manager::NUMBER,
-        'description' => __('Set the number of items to display per row on desktop.', 'vasutheme'),
+        'description' => __('Set the number of items to display per row on desktop.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-grid-container' => 'grid-template-columns: repeat({{VALUE}}, 1fr);',
         ],
@@ -244,20 +244,20 @@ $this->add_responsive_control(
 $this->add_control(
     'text_align',
     [
-        'label' => __('Text Align', 'vasutheme'),
+        'label' => __('Text Align', 'paperx'),
         'type' => \Elementor\Controls_Manager::CHOOSE,
-        'description' => __('Set the alignment of the text.', 'vasutheme'),
+        'description' => __('Set the alignment of the text.', 'paperx'),
         'options' => [
             'left' => [
-                'title' => __('Left', 'vasutheme'),
+                'title' => __('Left', 'paperx'),
                 'icon' => 'eicon-text-align-left',
             ],
             'center' => [
-                'title' => __('Center', 'vasutheme'),
+                'title' => __('Center', 'paperx'),
                 'icon' => 'eicon-text-align-center',
             ],
             'right' => [
-                'title' => __('Right', 'vasutheme'),
+                'title' => __('Right', 'paperx'),
                 'icon' => 'eicon-text-align-right',
             ],
         ],
@@ -271,11 +271,11 @@ $this->add_control(
 $this->add_control(
     'order',
     [
-        'label' => __('Order', 'vasutheme'),
+        'label' => __('Order', 'paperx'),
         'type' => \Elementor\Controls_Manager::SELECT,
         'options' => [
-            'ASC' => __('Ascending', 'vasutheme'),
-            'DESC' => __('Descending', 'vasutheme'),
+            'ASC' => __('Ascending', 'paperx'),
+            'DESC' => __('Descending', 'paperx'),
         ],
         'default' => 'DESC', // Default ordering
     ]
@@ -287,18 +287,18 @@ $this->add_control(
 // $this->start_controls_section(
 //     'section_style',
 //     [
-//         'label' => __('Style', 'vasutheme'),
+//         'label' => __('Style', 'paperx'),
 //     ]
 // );
 
 $this->add_responsive_control(
 	'show_image',
 	[
-		'label' => __( 'Show Image', 'vasutheme' ),
+		'label' => __( 'Show Image', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide post image.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide post image.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
@@ -310,11 +310,11 @@ $this->add_responsive_control(
 $this->add_responsive_control(
 	'show_post_meta',
 	[
-		'label' => __( 'Show Meta', 'vasutheme' ),
+		'label' => __( 'Show Meta', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide post meta.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide post meta.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'flex',
 		'selectors' => [
@@ -326,11 +326,11 @@ $this->add_responsive_control(
 $this->add_responsive_control(
 	'show_category',
 	[
-		'label' => __( 'Show Category', 'vasutheme' ),
+		'label' => __( 'Show Category', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide post categories.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide post categories.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
@@ -343,11 +343,11 @@ $this->add_responsive_control(
 $this->add_responsive_control(
 	'show_post_title',
 	[
-		'label' => __( 'Show Post Title', 'vasutheme' ),
+		'label' => __( 'Show Post Title', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide post title.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide post title.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
@@ -359,11 +359,11 @@ $this->add_responsive_control(
 $this->add_responsive_control(
 	'show_post_content',
 	[
-		'label' => __( 'Show Post Content', 'vasutheme' ),
+		'label' => __( 'Show Post Content', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide post content.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide post content.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
@@ -376,11 +376,11 @@ $this->add_responsive_control(
 $this->add_responsive_control(
 	'show_author_image',
 	[
-		'label' => __( 'Show Author Image', 'vasutheme' ),
+		'label' => __( 'Show Author Image', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide author image.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide author image.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
@@ -393,11 +393,11 @@ $this->add_responsive_control(
 $this->add_responsive_control(
 	'show_date',
 	[
-		'label' => __( 'Show Post Date', 'vasutheme' ),
+		'label' => __( 'Show Post Date', 'paperx' ),
         'type'    => \Elementor\Controls_Manager::SWITCHER,
-		'label_on' => __( 'On', 'vasutheme' ),
-		'label_off' => __( 'Off', 'vasutheme' ),
-        'description' => __('Toggle to display or hide post date.', 'vasutheme'),
+		'label_on' => __( 'On', 'paperx' ),
+		'label_off' => __( 'Off', 'paperx' ),
+        'description' => __('Toggle to display or hide post date.', 'paperx'),
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
@@ -414,7 +414,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_post_style',
     [
-        'label' => __('Post Style', 'vasutheme'),
+        'label' => __('Post Style', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -422,9 +422,9 @@ $this->start_controls_section(
 $this->add_control(
     'image_border_radius',
     [
-        'label'     => __('Image Border Radius', 'vasutheme'),
+        'label'     => __('Image Border Radius', 'paperx'),
         'type'      => \Elementor\Controls_Manager::DIMENSIONS,
-        'description' => __('Set border radius for post images.', 'vasutheme'),
+        'description' => __('Set border radius for post images.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-post-thumbnail-vasutheme img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -435,7 +435,7 @@ $this->add_control(
 $this->add_responsive_control(
     'image_width',
     [
-        'label' => esc_html__( 'Image Width', 'vasutheme' ),
+        'label' => esc_html__( 'Image Width', 'paperx' ),
         'type' => \Elementor\Controls_Manager::SLIDER,
         'size_units' => [ 'px' ],
 				'range' => [
@@ -456,7 +456,7 @@ $this->add_responsive_control(
 $this->add_responsive_control(
     'image_height',
     [
-        'label' => esc_html__( 'Image Height', 'vasutheme' ),
+        'label' => esc_html__( 'Image Height', 'paperx' ),
         'type' => \Elementor\Controls_Manager::SLIDER,
         'size_units' => [ 'px' ],
 				'range' => [
@@ -477,7 +477,7 @@ $this->add_responsive_control(
 $this->add_responsive_control(
     'iteam_gap',
     [
-        'label' => esc_html__( 'Image And Meta Gap', 'vasutheme' ),
+        'label' => esc_html__( 'Image And Meta Gap', 'paperx' ),
         'type' => \Elementor\Controls_Manager::SLIDER,
         'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -505,9 +505,9 @@ $this->add_responsive_control(
 $this->add_control(
     'transform_hover',
     [
-        'label' => __('Hover Transform', 'vasutheme'),
+        'label' => __('Hover Transform', 'paperx'),
         'type' => \Elementor\Controls_Manager::SLIDER,
-        'description' => __('Set the scale factor for post items on hover.', 'vasutheme'),
+        'description' => __('Set the scale factor for post items on hover.', 'paperx'),
         'size_units' => [''],
         'range' => [
             'px' => [
@@ -532,7 +532,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_title_style',
     [
-        'label' => __('Title', 'vasutheme'),
+        'label' => __('Title', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -540,9 +540,9 @@ $this->start_controls_section(
 $this->add_control(
     'title_color',
     [
-        'label'     => __('Title Color', 'vasutheme'),
+        'label'     => __('Title Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of post titles.', 'vasutheme'),
+        'description' => __('Set the color of post titles.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-post-title-vasutheme a' => 'color: {{VALUE}};',
         ],
@@ -552,15 +552,15 @@ $this->add_control(
 $this->add_control(
     'title_hover_text_decoration',
     [
-        'label' => __('Title Text Decoration (Hover)', 'vasutheme'),
+        'label' => __('Title Text Decoration (Hover)', 'paperx'),
         'type' => \Elementor\Controls_Manager::SELECT,
-        'description' => __('Set the text decoration for post titles on hover.', 'vasutheme'),
+        'description' => __('Set the text decoration for post titles on hover.', 'paperx'),
         'default' => 'none',
         'options' => [
-            'none' => __('None', 'vasutheme'),
-            'underline' => __('Underline', 'vasutheme'),
-            'overline' => __('Overline', 'vasutheme'),
-            'line-through' => __('Line Through', 'vasutheme'),
+            'none' => __('None', 'paperx'),
+            'underline' => __('Underline', 'paperx'),
+            'overline' => __('Overline', 'paperx'),
+            'line-through' => __('Line Through', 'paperx'),
         ],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-post-title-vasutheme:hover ' => 'text-decoration: {{VALUE}};',
@@ -571,9 +571,9 @@ $this->add_control(
 $this->add_control(
     'title_hover_text_color',
     [
-        'label' => __('Title Text Color (Hover)', 'vasutheme'),
+        'label' => __('Title Text Color (Hover)', 'paperx'),
         'type' => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of post titles on hover.', 'vasutheme'),
+        'description' => __('Set the color of post titles on hover.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-post-title-vasutheme:hover' => 'color: {{VALUE}};',
         ],
@@ -584,8 +584,8 @@ $this->add_group_control(
     \Elementor\Group_Control_Typography::get_type(),
     [
         'name'     => 'title_typography',
-        'label'    => __('Title Typography', 'vasutheme'),
-        'description' => __('Set the typography for post titles.', 'vasutheme'),
+        'label'    => __('Title Typography', 'paperx'),
+        'description' => __('Set the typography for post titles.', 'paperx'),
         'selector' => '{{WRAPPER}} .el-l-1-post-title-vasutheme a',
     ]
 );
@@ -596,7 +596,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_category_style',
     [
-        'label' => __('Category', 'vasutheme'),
+        'label' => __('Category', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -604,9 +604,9 @@ $this->start_controls_section(
 $this->add_control(
     'category_text_color',
     [
-        'label'     => __('Category Text Color', 'vasutheme'),
+        'label'     => __('Category Text Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of post category text.', 'vasutheme'),
+        'description' => __('Set the color of post category text.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'color: {{VALUE}};',
         ],
@@ -616,9 +616,9 @@ $this->add_control(
 $this->add_control(
     'category_bg_color',
     [
-        'label'     => __('Category Background Color', 'vasutheme'),
+        'label'     => __('Category Background Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the background color of post category.', 'vasutheme'),
+        'description' => __('Set the background color of post category.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'background-color: {{VALUE}};',
         ],
@@ -628,9 +628,9 @@ $this->add_control(
 $this->add_control(
     'border_radius',
     [
-        'label' => __('Border Radius', 'vasutheme'),
+        'label' => __('Border Radius', 'paperx'),
         'type' => \Elementor\Controls_Manager::DIMENSIONS,
-        'description' => __('Set the border radius of post category.', 'vasutheme'),
+        'description' => __('Set the border radius of post category.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -642,9 +642,9 @@ $this->add_control(
 $this->add_control(
     'category_border_padding',
     [
-        'label' => __('Category Padding', 'vasutheme'),
+        'label' => __('Category Padding', 'paperx'),
         'type' => \Elementor\Controls_Manager::DIMENSIONS,
-        'description' => __('Set the Category Padding of post category.', 'vasutheme'),
+        'description' => __('Set the Category Padding of post category.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -656,8 +656,8 @@ $this->add_group_control(
     \Elementor\Group_Control_Typography::get_type(),
     [
         'name'     => 'category_typography',
-        'label'    => __('Category Typography', 'vasutheme'),
-        'description' => __('Set the typography for post category.', 'vasutheme'),
+        'label'    => __('Category Typography', 'paperx'),
+        'description' => __('Set the typography for post category.', 'paperx'),
         'selector' => '{{WRAPPER}} .el-l-1-category-meta-vasutheme',
     ]
 );
@@ -668,7 +668,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_author_style',
     [
-        'label' => __('Author', 'vasutheme'),
+        'label' => __('Author', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -676,9 +676,9 @@ $this->start_controls_section(
 $this->add_control(
     'author_color',
     [
-        'label'     => __('Author Color', 'vasutheme'),
+        'label'     => __('Author Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of post author.', 'vasutheme'),
+        'description' => __('Set the color of post author.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-post-meta-vasutheme a' => 'color: {{VALUE}};',
         ],
@@ -689,8 +689,8 @@ $this->add_group_control(
     \Elementor\Group_Control_Typography::get_type(),
     [
         'name'     => 'author_typography',
-        'label'    => __('Author Typography', 'vasutheme'),
-        'description' => __('Set the typography for post author.', 'vasutheme'),
+        'label'    => __('Author Typography', 'paperx'),
+        'description' => __('Set the typography for post author.', 'paperx'),
         'selector' => '{{WRAPPER}} .el-l-1-post-meta-vasutheme a',
     ]
 );
@@ -701,7 +701,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_date_style',
     [
-        'label' => __('Date', 'vasutheme'),
+        'label' => __('Date', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -710,17 +710,17 @@ $this->add_group_control(
     \Elementor\Group_Control_Typography::get_type(),
     [
         'name'     => 'date_typography',
-        'label'    => __('Date Typography', 'vasutheme'),
-        'description' => __('Set the typography for post date.', 'vasutheme'),
+        'label'    => __('Date Typography', 'paperx'),
+        'description' => __('Set the typography for post date.', 'paperx'),
         'selector' => '{{WRAPPER}} .el-l-1-date-meta-vasutheme',
     ]
 );
 $this->add_control(
     'date_color',
     [
-        'label'     => __('Date Color', 'vasutheme'),
+        'label'     => __('Date Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of post author.', 'vasutheme'),
+        'description' => __('Set the color of post author.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-date-meta-vasutheme' => 'color: {{VALUE}};',
         ],
@@ -733,7 +733,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_content_style',
     [
-        'label' => __('Content', 'vasutheme'),
+        'label' => __('Content', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -741,9 +741,9 @@ $this->start_controls_section(
 $this->add_control(
     'content_color',
     [
-        'label'     => __('Content Color', 'vasutheme'),
+        'label'     => __('Content Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of post content.', 'vasutheme'),
+        'description' => __('Set the color of post content.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-post-content-vasutheme' => 'color: {{VALUE}};',
         ],
@@ -754,8 +754,8 @@ $this->add_group_control(
     \Elementor\Group_Control_Typography::get_type(),
     [
         'name'     => 'content_typography',
-        'label'    => __('Content Typography', 'vasutheme'),
-        'description' => __('Set the typography for post content.', 'vasutheme'),
+        'label'    => __('Content Typography', 'paperx'),
+        'description' => __('Set the typography for post content.', 'paperx'),
         'selector' => '{{WRAPPER}} .el-l-1-post-content-vasutheme',
     ]
 );
@@ -766,7 +766,7 @@ $this->end_controls_section();
 $this->start_controls_section(
     'section_container_style',
     [
-        'label' => __('Container', 'vasutheme'),
+        'label' => __('Container', 'paperx'),
         'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
     ]
 );
@@ -774,9 +774,9 @@ $this->start_controls_section(
 $this->add_control(
     'border_color',
     [
-        'label' => __('Border Color', 'vasutheme'),
+        'label' => __('Border Color', 'paperx'),
         'type' => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the color of the container border.', 'vasutheme'),
+        'description' => __('Set the color of the container border.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-color: {{VALUE}};',
         ],
@@ -786,9 +786,9 @@ $this->add_control(
 $this->add_control(
     'border_width',
     [
-        'label' => __('Border Width', 'vasutheme'),
+        'label' => __('Border Width', 'paperx'),
         'type' => \Elementor\Controls_Manager::DIMENSIONS,
-        'description' => __('Set the width of the container border.', 'vasutheme'),
+        'description' => __('Set the width of the container border.', 'paperx'),
         'size_units' => ['px', 'em', '%'],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -799,21 +799,21 @@ $this->add_control(
 $this->add_control(
     'border_style',
     [
-        'label' => __('Border Style', 'vasutheme'),
+        'label' => __('Border Style', 'paperx'),
         'type' => \Elementor\Controls_Manager::SELECT,
-        'description' => __('Set the style of the container border.', 'vasutheme'),
+        'description' => __('Set the style of the container border.', 'paperx'),
         'default' => 'none',
         'options' => [
-            'solid' => __('Solid', 'vasutheme'),
-            'dotted' => __('Dotted', 'vasutheme'),
-            'dashed' => __('Dashed', 'vasutheme'),
-            'double' => __('Double', 'vasutheme'),
-            'groove' => __('Groove', 'vasutheme'),
-            'ridge' => __('Ridge', 'vasutheme'),
-            'inset' => __('Inset', 'vasutheme'),
-            'outset' => __('Outset', 'vasutheme'),
-            'none' => __('None', 'vasutheme'),
-            'hidden' => __('Hidden', 'vasutheme'),
+            'solid' => __('Solid', 'paperx'),
+            'dotted' => __('Dotted', 'paperx'),
+            'dashed' => __('Dashed', 'paperx'),
+            'double' => __('Double', 'paperx'),
+            'groove' => __('Groove', 'paperx'),
+            'ridge' => __('Ridge', 'paperx'),
+            'inset' => __('Inset', 'paperx'),
+            'outset' => __('Outset', 'paperx'),
+            'none' => __('None', 'paperx'),
+            'hidden' => __('Hidden', 'paperx'),
         ],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-style: {{VALUE}};',
@@ -824,9 +824,9 @@ $this->add_control(
 $this->add_control(
     'background_border_radius',
     [
-        'label' => __('Background Border Radius', 'vasutheme'),
+        'label' => __('Background Border Radius', 'paperx'),
         'type' => \Elementor\Controls_Manager::DIMENSIONS,
-        'description' => __('Set the border radius of the container background.', 'vasutheme'),
+        'description' => __('Set the border radius of the container background.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
             '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -837,9 +837,9 @@ $this->add_control(
 $this->add_control(
     'background_color',
     [
-        'label'     => __('Background Color', 'vasutheme'),
+        'label'     => __('Background Color', 'paperx'),
         'type'      => \Elementor\Controls_Manager::COLOR,
-        'description' => __('Set the background color of the container.', 'vasutheme'),
+        'description' => __('Set the background color of the container.', 'paperx'),
         'selectors' => [
             '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'background-color: {{VALUE}};',
         ],
@@ -850,7 +850,7 @@ $this->add_group_control(
     \Elementor\Group_Control_Box_Shadow::get_type(),
     [
         'name' => 'box_shadow',
-        'description' => __('Add box shadow to the container.', 'vasutheme'),
+        'description' => __('Add box shadow to the container.', 'paperx'),
         'selector' => '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme',
     ]
 );

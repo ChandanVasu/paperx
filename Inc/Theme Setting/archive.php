@@ -108,16 +108,16 @@ function theme_setting_archive() {
                     // Loop through each template
                     foreach ($templates as $value => $data) {
                         ?>
-                    <div class="radio-item">
-                        <label>
-                            <input type="radio" name="archive_template" value="<?php echo $value; ?>" <?php
-                                checked(get_option('archive_template'), $value ); ?>>
-                            <img class="radio-image" src="<?php echo $data[1]; ?>" alt="<?php echo $data[0]; ?>">
-                        </label>
-                        <p>
-                            <?php echo $data[0]; ?>
-                        </p> <!-- Display the text below the image -->
-                    </div>
+                            <div class="radio-item">
+                                    <label>
+                                    <input type="radio" name="archive_template" value="<?php echo esc_attr($value); ?>" <?php checked(get_option('archive_template'), $value ); ?>>
+                                   <img class="radio-image" src="<?php echo esc_url($data[1]); ?>" alt="<?php echo esc_attr($data[0]); ?>">
+                                </label>
+                                <p>
+                                    <?php echo esc_html($data[0]); ?>
+                                </p> <!-- Display the text below the image -->
+                            </div>
+                                                
                     <?php
                     }
                     ?>

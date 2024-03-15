@@ -177,11 +177,12 @@ function theme_setting_header() {
                         foreach ($template_options as $template_key => $template_data) {
                             ?>
                             <div class="radio-item">
-                                <label>
-                                    <input type="radio" name="header_selected" value="<?php echo $template_key; ?>" <?php checked($selected_template, $template_key); ?>>
-                                    <img class="radio-image" src="<?php echo $template_data[1]; ?>" alt="<?php echo $template_data[0]; ?>">
-                                    <p><?php echo $template_data[0]; ?></p>
-                                </label>
+                            <label>
+                                <input type="radio" name="header_selected" value="<?php echo esc_attr($template_key); ?>" <?php checked($selected_template,                             $template_key); ?>>
+                                <img class="radio-image" src="<?php echo esc_url($template_data[1]); ?>" alt="<?php echo esc_attr($template_data[0]); ?>">
+                                <p><?php echo esc_html($template_data[0]); ?></p>
+                            </label>
+
                             </div>
                             <?php
                         }

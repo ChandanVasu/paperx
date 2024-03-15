@@ -9,7 +9,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Custom Post Share Widget', 'vasutheme' );
+        return __( 'Custom Post Share Widget', 'paperx' );
     }
 
     // Widget Icon (Optional)
@@ -28,7 +28,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_social_colors',
             [
-                'label' => __( 'Social Media Icons Colors', 'vasutheme' ),
+                'label' => __( 'Social Media Icons Colors', 'paperx' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -36,7 +36,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_color',
             [
-                'label' => __( 'Icon Color', 'vasutheme' ),
+                'label' => __( 'Icon Color', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon a i' => 'color: {{VALUE}};',
@@ -47,7 +47,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_hover_color',
             [
-                'label' => __( 'Icon Hover Color', 'vasutheme' ),
+                'label' => __( 'Icon Hover Color', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon a:hover i' => 'color: {{VALUE}};',
@@ -58,9 +58,9 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'background_color',
             [
-                'label'     => __('Background Color', 'vasutheme'),
+                'label'     => __('Background Color', 'paperx'),
                 'type'      => \Elementor\Controls_Manager::COLOR,
-                'description' => __('Set the background color of the container.', 'vasutheme'),
+                'description' => __('Set the background color of the container.', 'paperx'),
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon' => 'background-color: {{VALUE}};',
                 ],
@@ -70,9 +70,9 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'background_border_radius',
             [
-                'label' => __('Background Border Radius', 'vasutheme'),
+                'label' => __('Background Border Radius', 'paperx'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
-                'description' => __('Set the border radius of the container background.', 'vasutheme'),
+                'description' => __('Set the border radius of the container background.', 'paperx'),
                 'size_units' => ['px', '%'],
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -84,7 +84,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'box_shadow',
-                'description' => __('Add box shadow to the container.', 'vasutheme'),
+                'description' => __('Add box shadow to the container.', 'paperx'),
                 'selector' => '{{WRAPPER}} .el-social-mededi-icon',
             ]
         );
@@ -92,21 +92,21 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'border_style',
             [
-                'label' => __('Border Style', 'vasutheme'),
+                'label' => __('Border Style', 'paperx'),
                 'type' => \Elementor\Controls_Manager::SELECT,
-                'description' => __('Set the style of the container border.', 'vasutheme'),
+                'description' => __('Set the style of the container border.', 'paperx'),
                 'default' => 'none',
                 'options' => [
-                    'solid' => __('Solid', 'vasutheme'),
-                    'dotted' => __('Dotted', 'vasutheme'),
-                    'dashed' => __('Dashed', 'vasutheme'),
-                    'double' => __('Double', 'vasutheme'),
-                    'groove' => __('Groove', 'vasutheme'),
-                    'ridge' => __('Ridge', 'vasutheme'),
-                    'inset' => __('Inset', 'vasutheme'),
-                    'outset' => __('Outset', 'vasutheme'),
-                    'none' => __('None', 'vasutheme'),
-                    'hidden' => __('Hidden', 'vasutheme'),
+                    'solid' => __('Solid', 'paperx'),
+                    'dotted' => __('Dotted', 'paperx'),
+                    'dashed' => __('Dashed', 'paperx'),
+                    'double' => __('Double', 'paperx'),
+                    'groove' => __('Groove', 'paperx'),
+                    'ridge' => __('Ridge', 'paperx'),
+                    'inset' => __('Inset', 'paperx'),
+                    'outset' => __('Outset', 'paperx'),
+                    'none' => __('None', 'paperx'),
+                    'hidden' => __('Hidden', 'paperx'),
                 ],
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon' => 'border-style: {{VALUE}};',
@@ -117,9 +117,9 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'border_color',
             [
-                'label' => __('Border Color', 'vasutheme'),
+                'label' => __('Border Color', 'paperx'),
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'description' => __('Set the color of the container border.', 'vasutheme'),
+                'description' => __('Set the color of the container border.', 'paperx'),
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon' => 'border-color: {{VALUE}};',
                 ],
@@ -129,9 +129,9 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'border_width',
             [
-                'label' => __('Border Width', 'vasutheme'),
+                'label' => __('Border Width', 'paperx'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
-                'description' => __('Set the width of the container border.', 'vasutheme'),
+                'description' => __('Set the width of the container border.', 'paperx'),
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',

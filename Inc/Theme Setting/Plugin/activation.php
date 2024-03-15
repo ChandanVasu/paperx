@@ -46,7 +46,7 @@ function vasutheme_register_required_plugins() {
 	$plugins = array(
 
         array(
-            'name'         => 'Vasu Theme Core',
+            'name'         => 'Paper Core',
             'slug'         => 'paper-core',
             'source'       => 'https://mjnnu.com/demo/demofile/paper-core.zip',
             'required'     => true,
@@ -58,6 +58,18 @@ function vasutheme_register_required_plugins() {
             'slug'         => 'elementor',
             'required'     => true,
             'external_url' => 'https://wordpress.org/plugins/elementor/',
+        ),
+		array(
+			'name'               => esc_html__('Envato Market', 'paperx'),
+			'slug'               => 'envato-market',
+			'source'             => esc_url( 'https://goo.gl/pkJS33' ),
+            'external_url'       => esc_url( 'https://goo.gl/pkJS33' ),
+			'required'           => true,
+		), 
+		array(
+            'name'     => esc_html__('One User Avatar | User Profile Picture', 'paperx'),
+            'slug'     => 'one-user-avatar',
+            'required' => true,
         ),
 		array(
 			'name'         => 'Contact Form 7',
@@ -90,7 +102,7 @@ function vasutheme_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'vasutheme',
+		'id'           => 'paperx',
 		'default_path' => '',
 		'menu'         => 'tgmpa-install-plugins',
 		'has_notices'  => true,

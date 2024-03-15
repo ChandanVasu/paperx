@@ -10,7 +10,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Author Info Widget', 'vasutheme' );
+        return __( 'Author Info Widget', 'paperx' );
     }
 
     // Widget Icon (Optional)
@@ -29,7 +29,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __( 'Content', 'vasutheme' ),
+                'label' => __( 'Content', 'paperx' ),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -39,8 +39,8 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'author_name_typography',
-                'label' => __('Author Name Typography', 'vasutheme'),
-                'description' => __('Set the typography for author name.', 'vasutheme'),
+                'label' => __('Author Name Typography', 'paperx'),
+                'description' => __('Set the typography for author name.', 'paperx'),
                 'selector' => '{{WRAPPER}} .author-name a',
             ]
         );
@@ -49,7 +49,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'author_name_color',
             [
-                'label' => __('Author Name Color', 'vasutheme'),
+                'label' => __('Author Name Color', 'paperx'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .author-name a' => 'color: {{VALUE}};',
@@ -62,8 +62,8 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'last_updated_typography',
-                'label' => __('Last Updated Typography', 'vasutheme'),
-                'description' => __('Set the typography for last updated text.', 'vasutheme'),
+                'label' => __('Last Updated Typography', 'paperx'),
+                'description' => __('Set the typography for last updated text.', 'paperx'),
                 'selector' => '{{WRAPPER}} .author-name-last-updated p',
             ]
         );
@@ -72,7 +72,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'last_updated_color',
             [
-                'label' => __('Last Updated Color', 'vasutheme'),
+                'label' => __('Last Updated Color', 'paperx'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .author-name-last-updated p' => 'color: {{VALUE}};',
@@ -84,7 +84,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'author_name_hover_color',
             [
-                'label' => __('Author Name Hover Color', 'vasutheme'),
+                'label' => __('Author Name Hover Color', 'paperx'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .author-name a:hover' => 'color: {{VALUE}};',
@@ -116,7 +116,7 @@ class Comment_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Comment Widget', 'vasutheme' );
+        return __( 'Comment Widget', 'paperx' );
     }
 
     // Widget Icon (Optional)
@@ -155,7 +155,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Thumbnail Widget', 'vasutheme' );
+        return __( 'Post Thumbnail Widget', 'paperx' );
     }
 
     public function get_icon() {
@@ -170,14 +170,14 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __( 'Content', 'vasutheme' ),
+                'label' => __( 'Content', 'paperx' ),
             ]
         );
 
         $this->add_responsive_control(
 			'thumbnail_width',
 			[
-				'label' => __( 'Width', 'vasutheme' ),
+				'label' => __( 'Width', 'paperx' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -195,7 +195,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'thumbnail_border_radius', // Changed the control ID
             [
-                'label' => __( 'Border Radius', 'vasutheme' ), // Updated label
+                'label' => __( 'Border Radius', 'paperx' ), // Updated label
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -214,7 +214,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
 		$this->add_responsive_control(
 			'thumbnail_height',
 			[
-				'label' => __( 'Height', 'vasutheme' ),
+				'label' => __( 'Height', 'paperx' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -260,7 +260,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
     }
 
     public function get_title() {
-        return __( 'Post Title', 'vasutheme' );
+        return __( 'Post Title', 'paperx' );
     }
 
     public function get_icon() {
@@ -275,7 +275,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __( 'Content', 'vasutheme' ),
+                'label' => __( 'Content', 'paperx' ),
             ]
         );
 
@@ -283,8 +283,8 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'title_typography',
-                'label'    => __('Title Typography', 'vasutheme'),
-                'description' => __('Set the typography for post titles.', 'vasutheme'),
+                'label'    => __('Title Typography', 'paperx'),
+                'description' => __('Set the typography for post titles.', 'paperx'),
                 'selector' => '{{WRAPPER}} .el-post-title-vasutheme h1',
             ]
         );
@@ -292,9 +292,9 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
         $this->add_control(
             'title_color',
             [
-                'label'     => __('Title Text Color', 'vasutheme'),
+                'label'     => __('Title Text Color', 'paperx'),
                 'type'      => \Elementor\Controls_Manager::COLOR,
-                'description' => __('Set the color of post title text.', 'vasutheme'),
+                'description' => __('Set the color of post title text.', 'paperx'),
                 'selectors' => [
                     '{{WRAPPER}} .el-post-title-vasutheme h1' => 'color: {{VALUE}};',
                 ],
@@ -304,20 +304,20 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
         $this->add_control(
             'text_align',
             [
-                'label' => __('Text Align', 'vasutheme'),
+                'label' => __('Text Align', 'paperx'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
-                'description' => __('Set the alignment of the text.', 'vasutheme'),
+                'description' => __('Set the alignment of the text.', 'paperx'),
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'vasutheme'),
+                        'title' => __('Left', 'paperx'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'vasutheme'),
+                        'title' => __('Center', 'paperx'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'vasutheme'),
+                        'title' => __('Right', 'paperx'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -338,7 +338,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
         $post_title = get_the_title(); // Get the current post's title
         ?>
         <div class="el-post-title-vasutheme">
-            <h1><?php echo $post_title; ?></h1>
+        <h1><?php echo esc_html($post_title); ?></h1>
         </div>
         <?php
     }
@@ -354,7 +354,7 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Meta', 'vasutheme' );
+        return __( 'Post Meta', 'paperx' );
     }
 
     public function get_icon() {
@@ -369,7 +369,7 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __( 'Content', 'vasutheme' ),
+                'label' => __( 'Content', 'paperx' ),
             ]
         );
 
@@ -377,8 +377,8 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'meta_typography',
-                'label'    => __('Link Typography', 'vasutheme'),
-                'description' => __('Set the typography for post Meta Link.', 'vasutheme'),
+                'label'    => __('Link Typography', 'paperx'),
+                'description' => __('Set the typography for post Meta Link.', 'paperx'),
                 'selector' => '{{WRAPPER}} .el-post-meta a',
             ]
         );
@@ -387,8 +387,8 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'meta_typography_span',
-                'label'    => __('Meta Typography', 'vasutheme'),
-                'description' => __('Set the typography for post Meta.', 'vasutheme'),
+                'label'    => __('Meta Typography', 'paperx'),
+                'description' => __('Set the typography for post Meta.', 'paperx'),
                 'selector' => '{{WRAPPER}} .el-post-meta span',
             ]
         );
@@ -396,9 +396,9 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'meta_color',
             [
-                'label'     => __(' Meta Color', 'vasutheme'),
+                'label'     => __(' Meta Color', 'paperx'),
                 'type'      => \Elementor\Controls_Manager::COLOR,
-                'description' => __('Set the color of post meta text.', 'vasutheme'),
+                'description' => __('Set the color of post meta text.', 'paperx'),
                 'selectors' => [
                     '{{WRAPPER}} .el-post-meta a' => 'color: {{VALUE}};',
                 ],
@@ -408,9 +408,9 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'meta_color_a',
             [
-                'label'     => __(' Meta Link Color', 'vasutheme'),
+                'label'     => __(' Meta Link Color', 'paperx'),
                 'type'      => \Elementor\Controls_Manager::COLOR,
-                'description' => __('Set the color of post meta link text.', 'vasutheme'),
+                'description' => __('Set the color of post meta link text.', 'paperx'),
                 'selectors' => [
                     '{{WRAPPER}} .el-post-meta span' => 'color: {{VALUE}};',
                 ],
@@ -428,21 +428,21 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
         <div class="el-post-meta">
             <?php if (get_the_category()) : ?>
                 <div class="el-post-categories">
-                    <span><?php _e('Categories:', 'vasutheme'); ?></span>
+                    <span><?php _e('Categories:', 'paperx'); ?></span>
                     <?php the_category(', '); ?>
                 </div>
             <?php endif; ?>
 
             <?php if (get_the_tags()) : ?>
                 <div class="el-post-tags">
-                    <span><?php _e('Tags:', 'vasutheme'); ?></span>
+                    <span><?php _e('Tags:', 'paperx'); ?></span>
                     <?php the_tags('', ', ', ''); ?>
                 </div>
                 
             <?php endif; ?>
 
             <div class="el-post-author">
-                <span><?php _e('Author:', 'vasutheme'); ?></span>
+                <span><?php _e('Author:', 'paperx'); ?></span>
                 <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
                     <?php the_author(); ?>
                 </a>
@@ -461,7 +461,7 @@ class Breadcrumb_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Breadcrumb', 'vasutheme' );
+        return __( 'Breadcrumb', 'paperx' );
     }
 
     public function get_icon() {
@@ -495,7 +495,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Excerpt Widget', 'vasutheme' );
+        return __( 'Post Excerpt Widget', 'paperx' );
     }
 
     public function get_icon() {
@@ -510,7 +510,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __( 'Content', 'vasutheme' ),
+                'label' => __( 'Content', 'paperx' ),
             ]
         );
 
@@ -518,7 +518,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'excerpt_length',
             [
-                'label' => __( 'Excerpt Length', 'vasutheme' ),
+                'label' => __( 'Excerpt Length', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'min' => 1,
                 'default' => 20,
@@ -528,20 +528,20 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'text_align',
             [
-                'label' => __('Text Align', 'vasutheme'),
+                'label' => __('Text Align', 'paperx'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
-                'description' => __('Set the alignment of the text.', 'vasutheme'),
+                'description' => __('Set the alignment of the text.', 'paperx'),
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'vasutheme'),
+                        'title' => __('Left', 'paperx'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'vasutheme'),
+                        'title' => __('Center', 'paperx'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'vasutheme'),
+                        'title' => __('Right', 'paperx'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -556,8 +556,8 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name'     => 'Excerpt_typo',
-                'label'    => __('Excerpt Typography', 'vasutheme'),
-                'description' => __('Set the typography for post titles.', 'vasutheme'),
+                'label'    => __('Excerpt Typography', 'paperx'),
+                'description' => __('Set the typography for post titles.', 'paperx'),
                 'selector' => '{{WRAPPER}} .post-excerpt-widget p',
             ]
         );
@@ -565,9 +565,9 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'excerpt_color',
             [
-                'label'     => __('Excerpt Color', 'vasutheme'),
+                'label'     => __('Excerpt Color', 'paperx'),
                 'type'      => \Elementor\Controls_Manager::COLOR,
-                'description' => __('Set the color of post titles.', 'vasutheme'),
+                'description' => __('Set the color of post titles.', 'paperx'),
                 'selectors' => [
                     '{{WRAPPER}} .post-excerpt-widget p' => 'color: {{VALUE}};',
                 ],
