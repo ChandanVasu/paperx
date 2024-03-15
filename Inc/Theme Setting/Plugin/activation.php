@@ -39,18 +39,20 @@ add_action( 'tgmpa_register', 'vasutheme_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
+
+
 function vasutheme_register_required_plugins() {
 
 	$plugins = array(
 
-        // array(
-        //     'name'         => 'Vasu Theme Core',
-        //     'slug'         => 'vasutheme-core',
-        //     'source'       => 'https://wowtheme7.com/wp/demo-file/vasutheme/vasutheme-core.zip',
-        //     'required'     => true,
-        //     'version'      => '1.0.0',
+        array(
+            'name'         => 'Vasu Theme Core',
+            'slug'         => 'paper-core',
+            'source'       => 'https://mjnnu.com/demo/demofile/paper-core.zip',
+            'required'     => true,
+            'version'      => '1.0',
 
-        // ),
+        ),
         array(
             'name'         => 'Elementor Page Builder',
             'slug'         => 'elementor',
@@ -64,17 +66,11 @@ function vasutheme_register_required_plugins() {
 			'external_url' => 'http://wordpress.org/plugins/contact-form-7',
 		),
         array(
-			'name'         => 'Royal Elementor Addons and Templates',
-			'slug'         => 'royal-elementor-addons',
-			'required'     => true,
-			'external_url' => 'https://wordpress.org/plugins/royal-elementor-addons/',
+			'name'         => 'Svg Support',
+			'slug'         => 'svg-support',
+			'required'     => false,
+			'external_url' => 'https://wordpress.org/plugins/svg-support/',
 		),
-        // array(
-		// 	'name'         => 'Svg Support',
-		// 	'slug'         => 'svg-support',
-		// 	'required'     => false,
-		// 	'external_url' => 'https://wordpress.org/plugins/svg-support/',
-		// ),
 		array(
 			'name'         => 'One Click Demo Import',
 			'slug'         => 'one-click-demo-import',
