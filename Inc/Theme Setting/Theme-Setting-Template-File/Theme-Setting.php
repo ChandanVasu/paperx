@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/Assets/Styles/paper.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/Assets/Styles/Paper.css">
 
 </head>
 
