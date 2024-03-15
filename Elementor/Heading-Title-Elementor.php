@@ -17,7 +17,7 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __('Custom Title', 'custom-title-widget');
+        return __('Custom Title', 'vasutheme');
     }
 
     public function get_icon() {
@@ -32,7 +32,7 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Content', 'custom-title-widget'),
+                'label' => __('Content', 'vasutheme'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -40,27 +40,27 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'title',
             [
-                'label' => __('Title', 'custom-title-widget'),
+                'label' => __('Title', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Enter your title here', 'custom-title-widget'),
+                'default' => __('Enter your title here', 'vasutheme'),
             ]
         );
 
         $this->add_control(
             'title_tag',
             [
-                'label' => __('Title HTML Tag', 'custom-title-widget'),
+                'label' => __('Title HTML Tag', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'h2',
                 'options' => [
-                    'h1' => __('H1', 'custom-title-widget'),
-                    'h2' => __('H2', 'custom-title-widget'),
-                    'h3' => __('H3', 'custom-title-widget'),
-                    'h4' => __('H4', 'custom-title-widget'),
-                    'h5' => __('H5', 'custom-title-widget'),
-                    'h6' => __('H6', 'custom-title-widget'),
-                    'div' => __('DIV', 'custom-title-widget'),
-                    'span' => __('SPAN', 'custom-title-widget'),
+                    'h1' => __('H1', 'vasutheme'),
+                    'h2' => __('H2', 'vasutheme'),
+                    'h3' => __('H3', 'vasutheme'),
+                    'h4' => __('H4', 'vasutheme'),
+                    'h5' => __('H5', 'vasutheme'),
+                    'h6' => __('H6', 'vasutheme'),
+                    'div' => __('DIV', 'vasutheme'),
+                    'span' => __('SPAN', 'vasutheme'),
                 ],
             ]
         );
@@ -68,19 +68,19 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'title_alignment',
             [
-                'label' => __('Title Alignment', 'custom-title-widget'),
+                'label' => __('Title Alignment', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'custom-title-widget'),
+                        'title' => __('Left', 'vasutheme'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'custom-title-widget'),
+                        'title' => __('Center', 'vasutheme'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'custom-title-widget'),
+                        'title' => __('Right', 'vasutheme'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -92,15 +92,15 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'title_style',
             [
-                'label' => __('Title Style', 'custom-title-widget'),
+                'label' => __('Title Style', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'normal',
                 'options' => [
-                    'normal' => __('Normal', 'custom-title-widget'),
-                    'bold' => __('Bold', 'custom-title-widget'),
-                    'italic' => __('Italic', 'custom-title-widget'),
-                    'underline' => __('Underline', 'custom-title-widget'),
-                    'strikethrough' => __('Strikethrough', 'custom-title-widget'),
+                    'normal' => __('Normal', 'vasutheme'),
+                    'bold' => __('Bold', 'vasutheme'),
+                    'italic' => __('Italic', 'vasutheme'),
+                    'underline' => __('Underline', 'vasutheme'),
+                    'strikethrough' => __('Strikethrough', 'vasutheme'),
                 ],
             ]
         );
@@ -108,7 +108,7 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'title_color',
             [
-                'label' => __('Title Color', 'custom-title-widget'),
+                'label' => __('Title Color', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000000',
             ]
@@ -117,13 +117,13 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'title_box_style',
             [
-                'label' => __('Title Box Style', 'custom-title-widget'),
+                'label' => __('Title Box Style', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'none',
                 'options' => [
-                    'none' => __('None', 'custom-title-widget'),
-                    'style1' => __('Style 1', 'custom-title-widget'),
-                    'style2' => __('Style 2', 'custom-title-widget'),
+                    'none' => __('None', 'vasutheme'),
+                    'style1' => __('Style 1', 'vasutheme'),
+                    'style2' => __('Style 2', 'vasutheme'),
                     // Add more styles here if needed
                 ],
             ]

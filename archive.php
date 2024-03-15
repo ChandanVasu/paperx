@@ -22,8 +22,8 @@ $archive_template = get_option('archive_template');
 
     // Pagination
     the_posts_pagination(array(
-        'prev_text' => __('Previous page', 'your-text-domain'),
-        'next_text' => __('Next page', 'your-text-domain'),
+        'prev_text' => __('Previous page', 'vasutheme'),
+        'next_text' => __('Next page', 'vasutheme'),
     ));
     ?>
 

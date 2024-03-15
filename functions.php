@@ -1,22 +1,32 @@
 <?php
-
+// Add support for wide alignment
 function theme_setup() {
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
-
+    add_theme_support('wp-block-styles');
+    add_theme_support('responsive-embeds');
+    add_theme_support('html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ));
+    add_theme_support('custom-header', array(
+        'default-image' => '',
+        'width'         => 1000,
+        'height'        => 250,
+        'flex-height'   => true,
+        'flex-width'    => true,
+        'header-text'   => false,
+    ));
+    add_theme_support('custom-background');
+    add_theme_support('align-wide'); // Recommended: Add support for wide alignment
     register_nav_menus(array(
         'primary-menu' => __('Primary Menu', 'vasutheme'),
-    ));
-    register_nav_menus(array(
-        'hearder-menu' => __('Header Menu', 'vasutheme'),
     ));
 }
 add_action('after_setup_theme', 'theme_setup');
 
 
-include_once get_template_directory() . '/Inc/paperx-template.php';
+
+// include_once get_template_directory() . '/Plugin/custom-post-types.php';
 
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_script( 'elementor-frontend' );
@@ -40,11 +50,12 @@ function register_theme_options_menu() {
         'manage_options',        
         'theme-options',    
         'theme_options_page', 
-        'data:image/svg+xml;base64,' . base64_encode('<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1792 1792"><path fill="currentColor" d="M874 1638v66q-208-6-385-109.5T206 1319l58-34q29 49 73 99l65-57q148 168 368 212l-17 86q65 12 121 13m-598-530l-83 28q22 60 49 112l-57 33q-98-180-98-385t98-385l57 33q-30 56-49 112l82 28q-35 100-35 212q0 109 36 212m1252 177l58 34q-106 172-283 275.5T918 1704v-66q56-1 121-13l-17-86q220-44 368-212l65 57q44-50 73-99m-151-554l-233 80q14 42 14 85t-14 85l232 80q-31 92-98 169l-185-162q-57 67-147 85l48 241q-52 10-98 10t-98-10l48-241q-90-18-147-85l-185 162q-67-77-98-169l232-80q-14-42-14-85t14-85l-233-80q33-93 99-169l185 162q59-68 147-86l-48-240q44-10 98-10t98 10l-48 240q88 18 147 86l185-162q66 76 99 169M874 88v66q-65 2-121 13l17 86q-220 42-368 211l-65-56q-38 42-73 98l-57-33q106-172 282-275.5T874 88m831 808q0 205-98 385l-57-33q27-52 49-112l-83-28q36-103 36-212q0-112-35-212l82-28q-19-56-49-112l57-33q98 180 98 385m-120-423l-57 33q-35-56-73-98l-65 56q-148-169-368-211l17-86q-56-11-121-13V88q209 6 385 109.5T1585 473m163 423q0-173-67.5-331T1499 293t-272-181.5T896 44t-331 67.5T293 293T111.5 565T44 896t67.5 331T293 1499t272 181.5t331 67.5t331-67.5t272-181.5t181.5-272t67.5-331m44 0q0 182-71 348t-191 286t-286 191t-348 71t-348-71t-286-191t-191-286T0 896t71-348t191-286T548 71T896 0t348 71t286 191t191 286t71 348"/></svg>
-      '),                        
-        20                       
+        esc_url(home_url('/')) . 'wp-content/themes/paper-x/Assets/Image/icon.svg', // Updated URL with home_url() and corrected path
+        10                       
     );
 }
+
+
 add_action('admin_menu', 'register_theme_options_menu');
 
 // Include the file containing the callback function for the sub-menu
@@ -120,7 +131,7 @@ function enqueue_styles_and_scripts() {
     wp_enqueue_style('Main Css', get_template_directory_uri() . '/Assets/Styles/Elementor/main.css');
     wp_enqueue_style('List-Post', get_template_directory_uri() . '/Assets/Styles/Elementor/List-Post.css');
     wp_enqueue_style('List-Post-2', get_template_directory_uri() . '/Assets/Styles/Elementor/List-Post-2.css');
-    wp_enqueue_style('Paper Css', get_template_directory_uri() . '/Assets/Styles/Paper.css');
+    wp_enqueue_style('vasutheme Css', get_template_directory_uri() . '/Assets/Styles/vasutheme.css');
     wp_enqueue_style('Header1 css', get_template_directory_uri() . '/Assets/Styles/Header/header1.css');
     wp_enqueue_style('Header2 css', get_template_directory_uri() . '/Assets/Styles/Header/header2.css');
     wp_enqueue_style('Search css', get_template_directory_uri() . '/Assets/Styles/Header/search.css');
@@ -170,3 +181,63 @@ function ocdi_plugin_intro_text( $default_text ) {
 }
 add_filter( 'ocdi/plugin_intro_text', 'ocdi_plugin_intro_text' );
 
+
+// Enqueue editor styles
+function theme_editor_styles() {
+    add_editor_style('editor-styles.css'); // Replace 'editor-styles.css' with the name of your custom CSS file
+}
+add_action('admin_init', 'theme_editor_styles');
+
+
+
+
+
+
+// Register custom block patterns
+function theme_register_block_patterns() {
+    register_block_pattern(
+        'theme/custom-heading',
+        array(
+            'title'       => __('Custom Heading', 'vasutheme'),
+            'description' => __('A block pattern for a custom heading.', 'vasutheme'),
+            'content'     => "
+                <!-- wp:heading {\"level\":2,\"className\":\"custom-heading\"} -->
+                <h2 class=\"custom-heading\">Custom Heading Text</h2>
+                <!-- /wp:heading -->
+            ",
+            'categories'  => array('text'),
+            'keywords'    => array('heading', 'title'),
+        )
+    );
+}
+add_action('init', 'theme_register_block_patterns');
+
+
+function theme_register_block_styles() {
+    // Register a custom block style for the heading block
+    register_block_style(
+        'core/heading', // Block name
+        array(
+            'name'         => 'theme-custom-heading', // Style name
+            'label'        => __('Theme Custom Heading', 'vasutheme'), // Style label
+            'inline_style' => '.wp-block-heading.theme-custom-heading { color: red; }', // CSS styles
+        )
+    );
+
+    // You can register more block styles for other blocks as needed
+}
+add_action('init', 'theme_register_block_styles');
+
+
+function theme_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Main Sidebar', 'vasutheme' ),
+        'id'            => 'main-sidebar',
+        'description'   => __( 'Widgets added here will appear on the main sidebar.', 'vasutheme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'theme_widgets_init' );

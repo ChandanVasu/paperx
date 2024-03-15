@@ -1,10 +1,8 @@
-<div class='singlepost2-vasutheme'>
-
 <div class="post-content-single2">
     <!-- breadcrumb-inner.php -->
     <ul class="breadcrumb-single2">
-        <li><a href="<?php echo home_url(); ?>">Home</a></li>
-        <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>
+        <li><a href="<?php echo esc_url(home_url()); ?>">Home</a></li>
+        <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
     </ul>
     
     <h1 class="post-title-single2"><?php the_title(); ?></h1>
@@ -37,7 +35,7 @@
             $posttags = get_the_tags();
             if ($posttags) {
                 foreach($posttags as $tag) {
-                    echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>, '; 
+                    echo '<a href="' . esc_url(get_tag_link($tag->term_id)) . '">' . $tag->name . '</a>, '; 
                 }
             }
         ?>
@@ -52,6 +50,4 @@
 
 <div class="sidebar">
     <?php get_sidebar(); ?>
-</div>
-
 </div>

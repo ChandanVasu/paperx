@@ -1,27 +1,74 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying individual pages
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that other
- * 'pages' on your WordPress site may use a different template.
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#page
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Your_Theme_Name
+ * @package vasuthemeName
  */
 
 get_header();
 ?>
 
-<main id="page-primary" class="page-site-main">
-    <div class="page-content">
-        <h1 class="page-title"><?php the_title(); ?></h1>
+<div id="primary" class="content-area">
+    <main id="main" class="site-main">
         <?php
-        the_content();
-        ?>
-    </div>
-</main><!-- #primary -->
+        while (have_posts()) :
+            the_post();
+            ?>
+
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <header class="entry-header">
+                    <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+                </header><!-- .entry-header -->
+
+                <div class="entry-content">
+                    <?php
+                    the_content();
+
+                    wp_link_pages([
+                        'before' => '<div class="page-links">' . esc_html__('Pages:', 'vasutheme'),
+                        'after'  => '</div>',
+                    ]);
+                    ?>
+                </div><!-- .entry-content -->
+
+                <?php if (get_edit_post_link()) : ?>
+                    <footer class="entry-footer">
+                        <?php
+                        edit_post_link(
+                            sprintf(
+                                wp_kses(
+                                    /* translators: %s: Name of current post. Only visible to screen readers */
+                                    __('Edit <span class="screen-reader-text">%s</span>', 'vasutheme'),
+                                    [
+                                        'span' => [
+                                            'class' => [],
+                                        ],
+                                    ]
+                                ),
+                                get_the_title()
+                            ),
+                            '<span class="edit-link">',
+                            '</span>'
+                        );
+                        ?>
+                    </footer><!-- .entry-footer -->
+                <?php endif; ?>
+            </article><!-- #post-<?php the_ID(); ?> -->
+
+        <?php endwhile; ?>
+    </main><!-- #main -->
+</div><!-- #primary -->
+
+<div id="sidebar">
+    <?php if ( is_active_sidebar( 'main-sidebar' ) ) : ?>
+        <?php dynamic_sidebar( 'main-sidebar' ); ?>
+    <?php endif; ?>
+</div>
+
 
 <?php
+
 get_footer();
+?>

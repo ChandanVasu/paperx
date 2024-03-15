@@ -11,6 +11,9 @@
     }
 </style>
 
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
+    <!-- Your header content -->
 
 <div class="header-content-vasutheme">
     <?php

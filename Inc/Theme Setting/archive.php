@@ -102,7 +102,7 @@ function theme_setting_archive() {
                     $templates = array(
                         'archive1' => array('Archive Style 1',  get_template_directory_uri() . '/Assets/Image/archive1.png'),
                         // 'archive2' => array('Archive Style 2',  get_template_directory_uri() . '/Assets/Image/archive2.png'),
-                        'Comming Soon' => array('20+ Comming Soon',  get_template_directory_uri() . '/Assets/Image/comming_soon.gif'),
+                        'Comming Soon' => array('20+ Comming Soon',  get_template_directory_uri() . '/Assets/Image/comming_soon.webp'),
                     );
 
                     // Loop through each template

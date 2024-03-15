@@ -10,7 +10,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Author Info Widget', 'elementor-custom-extension' );
+        return __( 'Author Info Widget', 'vasutheme' );
     }
 
     // Widget Icon (Optional)
@@ -29,7 +29,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __( 'Content', 'elementor-custom-extension' ),
+                'label' => __( 'Content', 'vasutheme' ),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -49,7 +49,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'author_name_color',
             [
-                'label' => __('Author Name Color', 'elementor-custom-extension'),
+                'label' => __('Author Name Color', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .author-name a' => 'color: {{VALUE}};',
@@ -72,7 +72,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'last_updated_color',
             [
-                'label' => __('Last Updated Color', 'elementor-custom-extension'),
+                'label' => __('Last Updated Color', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .author-name-last-updated p' => 'color: {{VALUE}};',
@@ -84,7 +84,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'author_name_hover_color',
             [
-                'label' => __('Author Name Hover Color', 'elementor-custom-extension'),
+                'label' => __('Author Name Hover Color', 'vasutheme'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .author-name a:hover' => 'color: {{VALUE}};',
@@ -116,7 +116,7 @@ class Comment_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Comment Widget', 'elementor-custom-extension' );
+        return __( 'Comment Widget', 'vasutheme' );
     }
 
     // Widget Icon (Optional)
@@ -155,7 +155,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Thumbnail Widget', 'your-plugin' );
+        return __( 'Post Thumbnail Widget', 'vasutheme' );
     }
 
     public function get_icon() {
@@ -195,7 +195,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'thumbnail_border_radius', // Changed the control ID
             [
-                'label' => __( 'Border Radius', 'your-plugin' ), // Updated label
+                'label' => __( 'Border Radius', 'vasutheme' ), // Updated label
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -214,7 +214,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
 		$this->add_responsive_control(
 			'thumbnail_height',
 			[
-				'label' => __( 'Height', 'your-plugin' ),
+				'label' => __( 'Height', 'vasutheme' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -260,7 +260,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
     }
 
     public function get_title() {
-        return __( 'Post Title', 'your-plugin' );
+        return __( 'Post Title', 'vasutheme' );
     }
 
     public function get_icon() {
@@ -354,7 +354,7 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Meta', 'your-plugin' );
+        return __( 'Post Meta', 'vasutheme' );
     }
 
     public function get_icon() {
@@ -461,7 +461,7 @@ class Breadcrumb_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Breadcrumb', 'your-plugin' );
+        return __( 'Breadcrumb', 'vasutheme' );
     }
 
     public function get_icon() {
@@ -478,10 +478,10 @@ class Breadcrumb_Widget extends \Elementor\Widget_Base {
 
     protected function render() {
         ?>
-        <ul class="breadcrumb-single1">
-            <li><a href="<?php echo home_url(); ?>">Home</a></li>
-            <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>
-        </ul>
+    <ul class="breadcrumb-single2">
+        <li><a href="<?php echo esc_url(home_url()); ?>">Home</a></li>
+        <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
+    </ul>
         <?php
     }
 }
@@ -495,7 +495,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Excerpt Widget', 'your-plugin' );
+        return __( 'Post Excerpt Widget', 'vasutheme' );
     }
 
     public function get_icon() {
@@ -510,7 +510,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __( 'Content', 'your-plugin' ),
+                'label' => __( 'Content', 'vasutheme' ),
             ]
         );
 
@@ -518,7 +518,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'excerpt_length',
             [
-                'label' => __( 'Excerpt Length', 'your-plugin' ),
+                'label' => __( 'Excerpt Length', 'vasutheme' ),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'min' => 1,
                 'default' => 20,

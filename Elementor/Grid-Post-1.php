@@ -10,7 +10,7 @@ class Grid_Post_1 extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return __('Grid Style 1 - Papers', 'vasutheme');
+        return __('Grid Style 1 - vasuthemes', 'vasutheme');
     }
 
     // Define widget icon
@@ -446,7 +446,7 @@ $this->add_control(
 $this->add_responsive_control(
     'image_height',
     [
-        'label' => esc_html__( 'Image Height', 'textdomain' ),
+        'label' => esc_html__( 'Image Height', 'vasutheme' ),
         'type' => \Elementor\Controls_Manager::SLIDER,
         'size_units' => [ 'px' ],
 				'range' => [

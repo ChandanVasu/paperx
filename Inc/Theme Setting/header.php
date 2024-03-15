@@ -152,11 +152,11 @@ function theme_setting_header() {
             <?php do_settings_sections('header_setup_group'); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row">Header Paper Template:</th>
+                    <th scope="row">Header vasutheme Template:</th>
                     <td>
                         <input type="text" name="header_shortcode" value="<?php echo esc_attr(get_option('header_shortcode')); ?>"
-                            placeholder="Inter Paper Template ID" />
-                        <p class="description">Enter the Header Paper Template shortcode for the Header.</p>
+                            placeholder="Inter vasutheme Template ID" />
+                        <p class="description">Enter the Header vasutheme Template shortcode for the Header.</p>
                     </td>
                 </tr>
                 <tr valign="top">
@@ -170,7 +170,7 @@ function theme_setting_header() {
                         $template_options = array(
                             'header1' => array('Header 1', get_template_directory_uri() . '/Assets/Image/header.png'),
                             // 'header2' => array('Header 2',  get_template_directory_uri() . '/Assets/Image/header.png'),
-                            'Comming Soon' => array('20+ Comming Soon',  get_template_directory_uri() . '/Assets/Image/comming_soon.gif'),
+                            'Comming Soon' => array('20+ Comming Soon',  get_template_directory_uri() . '/Assets/Image/comming_soon.webp'),
                         );
                         
                         // Loop through each template option

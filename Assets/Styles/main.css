@@ -85,7 +85,6 @@ select {
   
     scrollbar-width: 1px;
     scrollbar-color: rgb(199, 199, 199) rgb(255, 255, 255);
-    z-index: 0;
   }
   
   /* Works on Chrome, Edge, and Safari */

@@ -92,12 +92,12 @@ function theme_setting_single_post() {
         <?php do_settings_sections('single_post_setup_group'); ?>
         <table class="form-table">
             <tr valign="top">
-                <th scope="row">Single Post Paper Template :</th>
+                <th scope="row">Single Post vasutheme Template :</th>
                 <td>
                     <input type="text" name="single_post_elementor_shortcode"
                         value="<?php echo esc_attr(get_option('single_post_elementor_shortcode')); ?>"
-                        placeholder="Inter Paper Template ID" />
-                    <p class="description">Enter the Paper Template shortcode for the single post here.</p>
+                        placeholder="Inter vasutheme Template ID" />
+                    <p class="description">Enter the vasutheme Template shortcode for the single post here.</p>
                 </td>
             </tr>
             <tr valign="top">
@@ -106,9 +106,9 @@ function theme_setting_single_post() {
                     <?php
                     // Define an array for labels, values, and corresponding image URLs
                     $templates = array(
-                        'single1' => array('Single Post',  get_template_directory_uri() . '/Assets/Image/single1.png'),
+                        'single1' => array('Single Post',  get_template_directory_uri() . '/Assets/Image/single1.jpg'),
                         // 'single2' => array('Right Side Bar',  get_template_directory_uri() . '/Assets/Image/single2.png'),
-                        'Comming Soon' => array('20+ Comming Soon',  get_template_directory_uri() . '/Assets/Image/comming_soon.gif'),
+                        'Comming Soon' => array('20+ Comming Soon',  get_template_directory_uri() . '/Assets/Image/comming_soon.webp'),
                     );
 
                     // Loop through each template

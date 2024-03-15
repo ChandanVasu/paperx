@@ -3,22 +3,13 @@
 
 <head>
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/Assets/Styles/Paper.css">
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/Assets/Styles/paper.css">
 
 </head>
 
 <body>
     <div class='vasu_theme_setting_admin_menu'>
 
-        <div class='paper_support_image'>
-            <img src="<?php echo get_template_directory_uri(); ?>/Assets/Image/Paper.jpg" alt="">
-        </div>
-        <div class='theme_update_notifiction'>
-            <?php
-               ?>
-
-            </span>
-        </div>
         <div class='vasu_theme_setting_admin_menu_body'>
             <div class="admin_menu_sidebar">
 
@@ -64,7 +55,7 @@
 
         </div>
 
-        <!-- <embed src="https://vasutime.com/email/index.html" type="" width="100%" height="600px" > -->
+        <!-- <embed src="https://vasuthemeime.com/email/index.html" type="" width="100%" height="600px" > -->
 
 
 

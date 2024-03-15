@@ -17,9 +17,9 @@ function theme_setting_footer() {
             <?php do_settings_sections('footer_setup_group'); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row">Footer Paper Template:</th>
+                    <th scope="row">Footer vasutheme Template:</th>
                     <td><input type="text" name="footer_elementor_shortcode" value="<?php echo esc_attr(get_option('footer_elementor_shortcode')); ?>" placeholder="Enter Elementor shortcode" />
-                        <p class="description">Enter the Paper Template shortcode to display the footer content.</p>
+                        <p class="description">Enter the vasutheme Template shortcode to display the footer content.</p>
                     </td>
                 </tr>
                 <tr valign="top">

@@ -9,7 +9,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Custom Post Share Widget', 'elementor-custom-extension' );
+        return __( 'Custom Post Share Widget', 'vasutheme' );
     }
 
     // Widget Icon (Optional)
@@ -28,7 +28,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_social_colors',
             [
-                'label' => __( 'Social Media Icons Colors', 'elementor-custom-extension' ),
+                'label' => __( 'Social Media Icons Colors', 'vasutheme' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -36,7 +36,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_color',
             [
-                'label' => __( 'Icon Color', 'elementor-custom-extension' ),
+                'label' => __( 'Icon Color', 'vasutheme' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon a i' => 'color: {{VALUE}};',
@@ -47,7 +47,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_hover_color',
             [
-                'label' => __( 'Icon Hover Color', 'elementor-custom-extension' ),
+                'label' => __( 'Icon Hover Color', 'vasutheme' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .el-social-mededi-icon a:hover i' => 'color: {{VALUE}};',

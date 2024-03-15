@@ -1,17 +1,76 @@
 /*
-Theme Name: Paper X
-Theme URI: https://wordpress.org/themes/twentytwenty/
-Author: VasuTheme
-Author URI: https://wordpress.org/
-Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs......
-Tags: News
-Version: 1.0.1
+Theme Name: PaperX 
+Theme URI: http://mjnnu.com
+Author: Vasu Theme
+Author URI: http://mjnnu.com/vasu-theme
+Description: vasutheme-X is a clean and elegant WordPress theme designed for bloggers and content creators. Its intuitive layout makes it perfect for showcasing your articles, stories, and photographs. With its responsive design, your website will look stunning on all devices. vasutheme-X also comes with customizable options for colors, fonts, and layout, allowing you to create a unique and personalized website. Whether you're a beginner or an experienced blogger, vasutheme-X provides the tools you need to build a professional online presence.
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentytwenty
+Text Domain: vasutheme-x
+Tags: blog
+Tested up to: 5.0
+Requires PHP: 5.6
+
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+
+Copyright (c) [Year] Vasu Theme
+This theme is distributed under the terms of the GNU General Public License v2 or later
 */
 
 
+.sticky {
+    background-color: #f5f5f5; /* Example background color */
+    border: 1px solid #ddd; /* Example border */
+    padding: 10px; /* Example padding */
+}
 
+
+/* Styles for WordPress-specific classes */
+
+/* Image captions */
+.wp-caption {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Caption text within image captions */
+.wp-caption-text {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Gallery captions */
+.gallery-caption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Author comments */
+.bypostauthor {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Right-aligned images */
+.alignright {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+/* Left-aligned images */
+.alignleft {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/* Center-aligned images */
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
