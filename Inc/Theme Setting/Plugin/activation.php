@@ -77,12 +77,12 @@ function vasutheme_register_required_plugins() {
 			'required'     => false,
 			'external_url' => 'http://wordpress.org/plugins/contact-form-7',
 		),
-        array(
-			'name'         => 'Svg Support',
-			'slug'         => 'svg-support',
-			'required'     => false,
-			'external_url' => 'https://wordpress.org/plugins/svg-support/',
-		),
+        // array(
+		// 	'name'         => 'Svg Support',
+		// 	'slug'         => 'svg-support',
+		// 	'required'     => false,
+		// 	'external_url' => 'https://wordpress.org/plugins/svg-support/',
+		// ),
 		array(
 			'name'         => 'One Click Demo Import',
 			'slug'         => 'one-click-demo-import',

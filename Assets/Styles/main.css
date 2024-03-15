@@ -1,8 +1,9 @@
 #sticky-box{ position: sticky; position: -webkit-sticky; top: 0px; }
 
 body {
-  font-weight: bold;
 }
+
+
 
 input[type="submit"] {
   background-color: #4CAF50; /* Green background */
