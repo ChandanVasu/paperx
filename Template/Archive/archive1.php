@@ -29,7 +29,7 @@
 
 
 
-<div class="archive-post-grids">
+<div class="theme-post-grid">
 
 <div class="el-g-1-grid-container"> <!-- Modified class name -->
     <?php while (have_posts()) : the_post(); ?>
@@ -41,11 +41,11 @@
             <a href="<?php the_permalink(); ?>">
                 <?php the_post_thumbnail(); ?>
             </a>
-            <span class="el-g-1-category-meta-vasutheme">
-                <?php the_category(', '); ?>
-            </span> <!-- Modified class name -->
+            
         </div>
-
+        <span class="el-g-2-category-meta-vasutheme">
+                <?php the_category(', '); ?>
+            </span> 
         <h2 class="el-g-1-post-title-vasutheme"><a href="<?php the_permalink(); ?>">
                 <?php echo wp_trim_words(get_the_title(), 10); ?>
             </a></h2> <!-- Modified class name -->
@@ -73,5 +73,8 @@
     
     <?php endwhile; ?>
 </div>
+<div class='theme-post-sidebar'>
+    <?php get_sidebar(); ?>
 
+</div>
 </div><!-- .grid-container -->

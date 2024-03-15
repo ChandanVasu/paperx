@@ -77,11 +77,11 @@ function theme_setting_single_post() {
 
     }
 
-    .radio-item p{
+    .radio-item p {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 600;
         font-size: 15px;
-}
+    }
 </style>
 
 <div class="theme_setting_single_post">
@@ -116,14 +116,16 @@ function theme_setting_single_post() {
                         ?>
                     <div class="radio-item">
                         <label>
-                        <input type="radio" name="single_post_template" value="<?php echo esc_attr($value); ?>" <?php checked(get_option('single_post_template'), $value ); ?>>
-                        <img class="radio-image" src="<?php echo esc_url($data[1]); ?>" alt="<?php echo esc_attr($data[0]); ?>">
-
+                            <input type="radio" name="single_post_template" value="<?php echo esc_attr($value); ?>"
+                                <?php checked(get_option('single_post_template'), $value ); ?>>
+                            <img class="radio-image" src="<?php echo esc_url($data[1]); ?>"
+                                alt="<?php echo esc_attr($data[0]); ?>">
                         </label>
                         <p>
-                            <?php echo esc_attr($data)[0]; ?>
+                            <?php echo esc_html($data[0]); ?>
                         </p> <!-- Display the text below the image -->
                     </div>
+
                     <?php
                     }
                     ?>

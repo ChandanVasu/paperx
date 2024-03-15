@@ -1,4 +1,8 @@
-#sticky-box{ position: sticky; position: -webkit-sticky; top: 0px; } 
+#sticky-box{ position: sticky; position: -webkit-sticky; top: 0px; }
+
+body {
+  font-weight: bold;
+}
 
 input[type="submit"] {
   background-color: #4CAF50; /* Green background */
@@ -80,27 +84,6 @@ select {
   font-size: 16px; /* 1em */
 }
 
-/* Works on Firefox */
-* {
-  
-    scrollbar-width: 1px;
-    scrollbar-color: rgb(199, 199, 199) rgb(255, 255, 255);
-  }
-  
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 2px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: rgb(173, 173, 173);
-    border-radius: 20px;
-    border: 3px solid rgb(255, 25, 25);
-  }
 
   
 .page_not_vasutheme,
@@ -133,6 +116,48 @@ select {
     padding: 10px;
 }
 
+/* Style for sidebar widget container */
+.sidebar-widget {
+    margin-bottom: 20px; /* Add space between widgets */
+}
+
+/* Style for widget title */
+.widget-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for search form */
+.widget_search input[type="search"] {
+    width: 100%; /* Make search input full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.widget_search input[type="submit"] {
+    display: none; /* Hide search button */
+}
+
+/* Style for categories list */
+.sidebar-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-widget ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar-widget ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-widget ul li a:hover {
+    color: var(--primary-color);
+}
+
 
 /* Page Title */
 .page-title {
@@ -149,22 +174,70 @@ select {
 }
 
 
-.archive-post-grids{
-  width: 1350px;
-  margin: auto;
-  padding-top: 20px;
-}
-
-@media (max-width: 770px){
- 
-.archive-post-grids{
-  width: 100%;
-  padding: 10px;
-
-} 
-}
-
 .archive-page-title{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
+
+
+.theme-post-grid{
+  padding: 40px;
+  display: flex;
+}
+
+.theme-post-sidebar{
+  width: 25%;
+  position: sticky;
+  top: 80px;
+  margin-left: 20px;
+  height: 500px;
+
+}
+
+.theme-post-grid .el-g-1-grid-container {
+  padding: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px;                         /
+}
+
+@media (max-width:1000px) {
+  .theme-post-grid .el-g-1-grid-container {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+  .theme-post-grid{
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .theme-post-sidebar{
+    width: 100%;
+    padding: 10px;  
+    margin-left: 0;
+
+  }
+
+}
+
+@media (max-width:800px) {
+  .theme-post-grid .el-g-1-grid-container {
+      grid-template-columns: repeat(1, 1fr); }
+
+  .theme-post-grid{
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .theme-post-sidebar{
+    width: 100%;
+    padding: 10px;  
+    margin-left: 0;
+  }
+}
+
+

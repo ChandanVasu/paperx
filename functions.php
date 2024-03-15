@@ -125,7 +125,7 @@ function enqueue_styles_and_scripts() {
     wp_enqueue_style('Single Post 1', get_template_directory_uri() . '/Assets/Styles/single1.css');
 
     // Enqueue custom scripts
-    wp_enqueue_script('footer-script', get_template_directory_uri() . '/Assets/Js/footer.js');
+    wp_enqueue_script('footer-script', get_template_directory_uri() . '/Assets/script/main.js');
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles_and_scripts');
 
@@ -160,3 +160,19 @@ function enqueue_comment_reply_script() {
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_comment_reply_script');
+
+
+
+// Register Sidebar
+function custom_theme_widgets_init() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Main Sidebar', 'paperx' ),
+        'id'            => 'main-sidebar',
+        'description'   => esc_html__( 'Widgets added here will appear in the main sidebar.', 'paperx' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'custom_theme_widgets_init' );

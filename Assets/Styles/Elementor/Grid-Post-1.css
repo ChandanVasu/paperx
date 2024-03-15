@@ -10,9 +10,9 @@
 .el-g-1-grid-container {
     padding: 2px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust to display four items in one row */
-    grid-gap: 20px;                         /* Adjust the gap between grid items */
-}
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px;  }                       
+
 
 /* Post title */
 .el-g-1-post-title-vasutheme a {
@@ -126,7 +126,15 @@
 }
 
 /* CSS for Mobile Devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
+    /* Adjust grid container for mobile */
+    .el-g-1-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CSS for Mobile Devices */
+@media only screen and (max-width: 800px) {
     /* Adjust grid container for mobile */
     .el-g-1-grid-container {
         grid-template-columns: repeat(1, 1fr);
