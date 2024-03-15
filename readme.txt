@@ -1,10 +1,22 @@
-=== Theme Name ===
-Contributors: (Your name or names of contributors)
-Tags: blog, writer, minimalist, responsive, customizable
-Requires at least: WordPress version required
-Tested up to: WordPress version tested up to
-Requires PHP: Minimum PHP version required
-Stable tag: Version number
+=== Paper X ===
+Theme Name: Paperx
+Theme URI: http://mjnnu.com
+Author: Vasu Theme
+Author URI: http://vasutheme.mjnnu.com/
+Description: vasutheme-X is a clean and elegant WordPress theme designed for bloggers and content creators. Its intuitive layout makes it perfect for showcasing your articles, stories, and photographs. With its responsive design, your website will look stunning on all devices. vasutheme-X also comes with customizable options for colors, fonts, and layout, allowing you to create a unique and personalized website. Whether you're a beginner or an experienced blogger, vasutheme-X provides the tools you need to build a professional online presence.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: paperx
+Tags: blog
+Tested up to: 5.0
+Requires PHP: 5.6
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Copyright (c) 2024 Vasu Theme
+This theme is distributed under the terms of the GNU General Public License v2 or later
 
 == Description ==
 Vasutheme-X is a clean and elegant WordPress theme designed for bloggers, writers, and content creators. Its minimalist design and intuitive layout make it perfect for showcasing your articles, stories, and photographs. With its responsive design, your website will look stunning on all devices. Vasutheme-X also comes with customizable options for colors, fonts, and layout, allowing you to create a unique and personalized website. Whether you're a beginner or an experienced blogger, Vasutheme-X provides the tools you need to build a professional online presence.
