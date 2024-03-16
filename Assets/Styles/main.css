@@ -1,48 +1,71 @@
-#sticky-box{ position: sticky; position: -webkit-sticky; top: 0px; }
-
-body {
+#sticky-box {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
 }
+
+body {}
 
 
 
 input[type="submit"] {
-  background-color: #4CAF50; /* Green background */
-  border: none; /* No border */
-  color: white; /* White text */
-  padding: 15px 32px; /* Padding */
-  text-align: center; /* Center text */
-  text-decoration: none; /* No text decoration */
-  display: inline-block; /* Display as inline block */
-  font-size: 16px; /* Font size */
-  margin: 4px 2px; /* Margin */
-  cursor: pointer; /* Cursor pointer */
-  border-radius: 10px; /* Border radius */
+  background-color: #4CAF50;
+  /* Green background */
+  border: none;
+  /* No border */
+  color: white;
+  /* White text */
+  padding: 15px 32px;
+  /* Padding */
+  text-align: center;
+  /* Center text */
+  text-decoration: none;
+  /* No text decoration */
+  display: inline-block;
+  /* Display as inline block */
+  font-size: 16px;
+  /* Font size */
+  margin: 4px 2px;
+  /* Margin */
+  cursor: pointer;
+  /* Cursor pointer */
+  border-radius: 10px;
+  /* Border radius */
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
+  /* Darker green on hover */
 }
 
 
 .wpcf7-submit {
-  background-color: var(--primary-color); /* Blue background color */
-  color: #fff; /* White text color */
-  padding: 10px 20px; /* Padding around text */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: var(--primary-color);
+  /* Blue background color */
+  color: #fff;
+  /* White text color */
+  padding: 10px 20px;
+  /* Padding around text */
+  border: none;
+  /* Remove border */
+  border-radius: 5px;
+  /* Add border radius for rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
 }
 
 .wpcf7-submit:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
+  /* Darker blue on hover */
 }
 
 
 
 a {
   color: #130bff;
-text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
@@ -56,34 +79,46 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
-  padding: 8px; /* 0.5em */
+th,
+td {
+  padding: 8px;
+  /* 0.5em */
   border: 1px solid #ccc;
 }
 
 /* Targeting unordered lists */
-ul , ol{
-  margin: 0; /* Remove default margin */
-  padding: 20px; /* Remove default padding */
+ul,
+ol {
+  margin: 0;
+  /* Remove default margin */
+  padding: 20px;
+  /* Remove default padding */
   line-height: 1.4;
   text-decoration: n;
 }
 
 /* Styling list items */
-ul li, ol li {
-  margin-bottom: 10px; /* Add margin between list items */
+ul li,
+ol li {
+  margin-bottom: 10px;
+  /* Add margin between list items */
 }
 
 /* Styling links inside list items */
-ul li a, ol li a {
-  text-decoration: none; /* Remove underline */
-  color: #333; /* Change link color */
+ul li a,
+ol li a {
+  text-decoration: none;
+  /* Remove underline */
+  color: #333;
+  /* Change link color */
 }
 
 /* Styling nested lists */
 ul ul {
-  margin-top: 5px; /* Add space above nested lists */
-  margin-left: 20px; /* Indent nested lists */
+  margin-top: 5px;
+  /* Add space above nested lists */
+  margin-left: 20px;
+  /* Indent nested lists */
 }
 
 
@@ -94,86 +129,94 @@ input[type="password"],
 textarea,
 select {
   width: 100%;
-  padding: 8px; /* 0.5em */
-  margin-bottom: 16px; /* 1em */
+  padding: 8px;
+  /* 0.5em */
+  margin-bottom: 16px;
+  /* 1em */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 16px; /* 1em */
+  font-size: 16px;
+  /* 1em */
 }
 
 
-  
+
 .page_not_vasutheme,
 .page_not_found {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 200px;
-    flex-direction: column;
-  }
- .page_not_found img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  flex-direction: column;
+}
+
+.page_not_found img {
   height: 50%;
   width: 50%;
 }
 
-.page_not_found h1{
+.page_not_found h1 {
   margin-top: 50px;
 }
-.page_not_found h1 a{
+
+.page_not_found h1 a {
   font-size: 25px;
   color: var(--primary-color);
   text-decoration: none;
 }
 
-.vasutheme-footer{
-    text-align: center;
+.vasutheme-footer {
+  text-align: center;
 }
 
-.vasutheme-footer p{
-    padding: 10px;
+.vasutheme-footer p {
+  padding: 10px;
 }
 
 /* Style for sidebar widget container */
 .sidebar-widget {
-    margin-bottom: 20px; /* Add space between widgets */
+  margin-bottom: 20px;
+  /* Add space between widgets */
 }
 
 /* Style for widget title */
 .widget-title {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* Style for search form */
 .widget_search input[type="search"] {
-    width: 100%; /* Make search input full width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  /* Make search input full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .widget_search input[type="submit"] {
-    display: none; /* Hide search button */
+  display: none;
+  /* Hide search button */
 }
 
 /* Style for categories list */
 .sidebar-widget ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .sidebar-widget ul li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .sidebar-widget ul li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .sidebar-widget ul li a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 
@@ -192,51 +235,53 @@ select {
 }
 
 
-.archive-page-title{
+.archive-page-title {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 
-.theme-post-grid{
+.theme-post-grid {
   padding: 10px 80px;
   display: flex;
 }
 
-.theme-post-sidebar{
+.theme-post-sidebar {
   width: 30%;
   position: sticky;
   padding: 0px 30px;
   top: 80px;
   margin-left: 20px;
-  height: 100%; /* Ensure the sidebar takes the full height */
+  height: 100%;
+  /* Ensure the sidebar takes the full height */
   overflow-y: auto;
 }
 
 .theme-post-grid .el-g-1-grid-container {
   padding: 2px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 20px; 
-  width: 80%;                        /
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 80%;/
 }
 
 @media (max-width:1000px) {
   .theme-post-grid .el-g-1-grid-container {
-      grid-template-columns: repeat(2, 1fr); 
-      width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
-  .theme-post-grid{
+
+  .theme-post-grid {
     padding: 10px !important;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .theme-post-sidebar{
+  .theme-post-sidebar {
     width: 100%;
-    padding: 10px;  
+    padding: 10px;
     margin-left: 0;
 
   }
@@ -245,22 +290,20 @@ select {
 
 @media (max-width:800px) {
   .theme-post-grid .el-g-1-grid-container {
-      grid-template-columns: repeat(1, 1fr);
-      width: 100%;
-     }
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 
-  .theme-post-grid{
+  .theme-post-grid {
     padding: 10px !important;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .theme-post-sidebar{
+  .theme-post-sidebar {
     width: 100%;
-    padding: 10px;  
+    padding: 10px;
     margin-left: 0;
   }
 }
-
-
