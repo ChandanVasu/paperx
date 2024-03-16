@@ -282,7 +282,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
                 'name'     => 'title_typography',
                 'label'    => __('Title Typography', 'paperx'),
                 'description' => __('Set the typography for post titles.', 'paperx'),
-                'selector' => '{{WRAPPER}} .el-post-title-vasutheme h1',
+                'selector' => '{{WRAPPER}} .el-post-title-paperx h1',
             ]
         );
 
@@ -293,7 +293,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'description' => __('Set the color of post title text.', 'paperx'),
                 'selectors' => [
-                    '{{WRAPPER}} .el-post-title-vasutheme h1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .el-post-title-paperx h1' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -320,7 +320,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
                 ],
                 'default' => 'Left',
                 'selectors' => [
-                    '{{WRAPPER}} .el-post-title-vasutheme h1' => 'align-items: {{VALUE}}; text-align: {{VALUE}};',
+                    '{{WRAPPER}} .el-post-title-paperx h1' => 'align-items: {{VALUE}}; text-align: {{VALUE}};',
                 ],
             ]
         );
@@ -334,7 +334,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
         $settings = $this->get_settings_for_display();
         $post_title = get_the_title(); // Get the current post's title
         ?>
-        <div class="el-post-title-vasutheme">
+        <div class="el-post-title-paperx">
         <h1><?php echo esc_html($post_title); ?></h1>
         </div>
         <?php

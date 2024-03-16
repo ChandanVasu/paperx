@@ -9,7 +9,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Single Post Content', 'paperx' );
+        return __( 'Single Post', 'paperx' );
     }
 
     // Widget Icon
@@ -29,7 +29,7 @@ class Single_Post_Content_Widget extends \Elementor\Widget_Base {
         // Check if it's a single post
         if ( is_singular( 'post' ) ) {
             setup_postdata( $post );
-            echo '<div class="el-single-post-content-vasutheme">' . the_content() . '</div>';
+            echo '<div class="el-single-post-content-paperx">' . the_content() . '</div>';
             wp_reset_postdata();
         } else {
             echo '<h1>This Is Demo Heading</h1>

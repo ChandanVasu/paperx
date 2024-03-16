@@ -302,15 +302,15 @@ select {
   font-size: 13px;
 }
 
-.author-info img {
-  border: 2px dotted black;
+.author-avatar img {
+  border: 2px dotted black !important;
   width: 45px !important;
   height: 45px !important;
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
-.author-info img:hover {
-  border: 2px dotted rgb(255, 0, 0);
+.author-avatar img:hover {
+  border: 2px dotted var(--primary-color) !important;
 
 }
 

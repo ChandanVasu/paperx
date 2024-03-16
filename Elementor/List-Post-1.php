@@ -10,7 +10,7 @@ class List_Post_1 extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return __('List Style 1 - vasuthemes', 'paperx');
+        return __('List Post 1', 'paperx');
     }
 
     // Define widget icon
@@ -96,46 +96,46 @@ class List_Post_1 extends \Elementor\Widget_Base
         ?>
 <div class="el-l-1-grid-container"> <!-- Modified class name -->
     <?php while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
-    <div class="el-l-1-custom-post-item-vasutheme"> <!-- Modified class name -->
+    <div class="el-l-1-custom-post-item-paperx"> <!-- Modified class name -->
  
-        <div class="el-l-1-post-thumbnail-vasutheme"> <!-- Modified class name -->
+        <div class="el-l-1-post-thumbnail-paperx"> <!-- Modified class name -->
             <a href="<?php the_permalink(); ?>">
                 <?php the_post_thumbnail(); ?>
             </a>
 
         </div>
 
-        <div class='el-l-1-post-meta-item-vasutheme'> 
+        <div class='el-l-1-post-meta-item-paperx'> 
 
             
-            <span class="el-l-1-category-meta-vasutheme">
+            <span class="el-l-1-category-meta-paperx">
             <?php the_category(', '); ?>
             </span> <!-- Modified class name -->
            
 
             
-            <h2 class="el-l-1-post-title-vasutheme"><a href="<?php the_permalink(); ?>">
+            <h2 class="el-l-1-post-title-paperx"><a href="<?php the_permalink(); ?>">
                 <?php echo wp_trim_words(get_the_title(), $settings['title_length'], '...'); ?>
             </a></h2> <!-- Modified class name -->
            
  
-            <div class="el-l-1-post-meta-vasutheme"> <!-- Modified class name -->
+            <div class="el-l-1-post-meta-paperx"> <!-- Modified class name -->
             <?php
             $author_id = get_the_author_meta('ID');
             $author_avatar = get_avatar_url($author_id, ['size' => 32]);
                             ?>
-            <img class="el-l-1-author-avatar-vasutheme" src="<?php echo esc_url($author_avatar); ?>"
+            <img class="el-l-1-author-avatar-paperx" src="<?php echo esc_url($author_avatar); ?>"
                 alt="<?php echo esc_attr(get_the_author()); ?>"> <!-- Modified class name -->
-            <a class="el-l-1-name-meta-vasutheme" href="<?php echo esc_url(get_author_posts_url($author_id)); ?>">
+            <a class="el-l-1-name-meta-paperx" href="<?php echo esc_url(get_author_posts_url($author_id)); ?>">
                 <?php the_author(); ?>
             </a>
-            <span class="el-l-1-date-meta-vasutheme">
+            <span class="el-l-1-date-meta-paperx">
                 <?php echo get_the_date(); ?>
             </span> <!-- Modified class name -->
         
             </div>
             
-            <div class="el-l-1-post-content-vasutheme"> <!-- Modified class name -->
+            <div class="el-l-1-post-content-paperx"> <!-- Modified class name -->
             <?php echo wp_trim_words(get_the_content(), $settings['content_length'], '...'); ?>
             </div>
            
@@ -263,7 +263,7 @@ $this->add_control(
         ],
         'default' => 'Left',
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'align-items: {{VALUE}}; text-align: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'align-items: {{VALUE}}; text-align: {{VALUE}};',
         ],
     ]
 );
@@ -302,7 +302,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-post-thumbnail-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-post-thumbnail-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -318,7 +318,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'flex',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-post-meta-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-post-meta-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -334,7 +334,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-category-meta-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-category-meta-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -351,7 +351,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-post-title-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-post-title-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -367,7 +367,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-post-content-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-post-content-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -384,7 +384,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-author-avatar-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-author-avatar-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -401,7 +401,7 @@ $this->add_responsive_control(
 		'return_value'	=> 'none',
 		'default'	=> 'block',
 		'selectors' => [
-			'{{WRAPPER}} .el-l-1-date-meta-vasutheme' => 'display: {{VALUE}}',
+			'{{WRAPPER}} .el-l-1-date-meta-paperx' => 'display: {{VALUE}}',
 		],
 	]
 );
@@ -427,7 +427,7 @@ $this->add_control(
         'description' => __('Set border radius for post images.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-thumbnail-vasutheme img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-post-thumbnail-paperx img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
     ]
 );
@@ -448,7 +448,7 @@ $this->add_responsive_control(
 				],
 				
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-thumbnail-vasutheme img' => 'width: {{SIZE}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-post-thumbnail-paperx img' => 'width: {{SIZE}}{{UNIT}};',
         ],
     ]
 );
@@ -469,7 +469,7 @@ $this->add_responsive_control(
 				],
 				
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-thumbnail-vasutheme img' => 'height: {{SIZE}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-post-thumbnail-paperx img' => 'height: {{SIZE}}{{UNIT}};',
         ],
     ]
 );
@@ -496,7 +496,7 @@ $this->add_responsive_control(
 					'size' => 10,
         ],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'gap: {{SIZE}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'gap: {{SIZE}}{{UNIT}};',
         ],
     ]
 );
@@ -521,7 +521,7 @@ $this->add_control(
             'size' => 1.03,
         ],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-thumbnail-vasutheme img:hover' => 'transform: scale({{SIZE}});',
+            '{{WRAPPER}} .el-l-1-post-thumbnail-paperx img:hover' => 'transform: scale({{SIZE}});',
         ],
     ]
 );
@@ -544,7 +544,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of post titles.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-title-vasutheme a' => 'color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-post-title-paperx a' => 'color: {{VALUE}};',
         ],
     ]
 );
@@ -563,7 +563,7 @@ $this->add_control(
             'line-through' => __('Line Through', 'paperx'),
         ],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-title-vasutheme:hover ' => 'text-decoration: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-post-title-paperx:hover ' => 'text-decoration: {{VALUE}};',
         ],
     ]
 );
@@ -575,7 +575,7 @@ $this->add_control(
         'type' => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of post titles on hover.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-title-vasutheme:hover' => 'color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-post-title-paperx:hover' => 'color: {{VALUE}};',
         ],
     ]
 );
@@ -586,7 +586,7 @@ $this->add_group_control(
         'name'     => 'title_typography',
         'label'    => __('Title Typography', 'paperx'),
         'description' => __('Set the typography for post titles.', 'paperx'),
-        'selector' => '{{WRAPPER}} .el-l-1-post-title-vasutheme a',
+        'selector' => '{{WRAPPER}} .el-l-1-post-title-paperx a',
     ]
 );
 
@@ -608,7 +608,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of post category text.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-category-meta-paperx a' => 'color: {{VALUE}};',
         ],
     ]
 );
@@ -620,7 +620,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the background color of post category.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'background-color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-category-meta-paperx a' => 'background-color: {{VALUE}};',
         ],
     ]
 );
@@ -633,7 +633,7 @@ $this->add_control(
         'description' => __('Set the border radius of post category.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-category-meta-paperx a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
     ]
 );
@@ -647,7 +647,7 @@ $this->add_control(
         'description' => __('Set the Category Padding of post category.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-category-meta-vasutheme a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-category-meta-paperx a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
     ]
 );
@@ -658,7 +658,7 @@ $this->add_group_control(
         'name'     => 'category_typography',
         'label'    => __('Category Typography', 'paperx'),
         'description' => __('Set the typography for post category.', 'paperx'),
-        'selector' => '{{WRAPPER}} .el-l-1-category-meta-vasutheme',
+        'selector' => '{{WRAPPER}} .el-l-1-category-meta-paperx',
     ]
 );
 
@@ -680,7 +680,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of post author.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-meta-vasutheme a' => 'color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-post-meta-paperx a' => 'color: {{VALUE}};',
         ],
     ]
 );
@@ -691,7 +691,7 @@ $this->add_group_control(
         'name'     => 'author_typography',
         'label'    => __('Author Typography', 'paperx'),
         'description' => __('Set the typography for post author.', 'paperx'),
-        'selector' => '{{WRAPPER}} .el-l-1-post-meta-vasutheme a',
+        'selector' => '{{WRAPPER}} .el-l-1-post-meta-paperx a',
     ]
 );
 
@@ -712,7 +712,7 @@ $this->add_group_control(
         'name'     => 'date_typography',
         'label'    => __('Date Typography', 'paperx'),
         'description' => __('Set the typography for post date.', 'paperx'),
-        'selector' => '{{WRAPPER}} .el-l-1-date-meta-vasutheme',
+        'selector' => '{{WRAPPER}} .el-l-1-date-meta-paperx',
     ]
 );
 $this->add_control(
@@ -722,7 +722,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of post author.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-date-meta-vasutheme' => 'color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-date-meta-paperx' => 'color: {{VALUE}};',
         ],
     ]
 );
@@ -745,7 +745,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of post content.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-post-content-vasutheme' => 'color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-post-content-paperx' => 'color: {{VALUE}};',
         ],
     ]
 );
@@ -756,7 +756,7 @@ $this->add_group_control(
         'name'     => 'content_typography',
         'label'    => __('Content Typography', 'paperx'),
         'description' => __('Set the typography for post content.', 'paperx'),
-        'selector' => '{{WRAPPER}} .el-l-1-post-content-vasutheme',
+        'selector' => '{{WRAPPER}} .el-l-1-post-content-paperx',
     ]
 );
 
@@ -778,7 +778,7 @@ $this->add_control(
         'type' => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the color of the container border.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'border-color: {{VALUE}};',
         ],
     ]
 );
@@ -791,7 +791,7 @@ $this->add_control(
         'description' => __('Set the width of the container border.', 'paperx'),
         'size_units' => ['px', 'em', '%'],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
     ]
 );
@@ -816,7 +816,7 @@ $this->add_control(
             'hidden' => __('Hidden', 'paperx'),
         ],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-style: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'border-style: {{VALUE}};',
         ],
     ]
 );
@@ -829,7 +829,7 @@ $this->add_control(
         'description' => __('Set the border radius of the container background.', 'paperx'),
         'size_units' => ['px', '%'],
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
     ]
 );
@@ -841,7 +841,7 @@ $this->add_control(
         'type'      => \Elementor\Controls_Manager::COLOR,
         'description' => __('Set the background color of the container.', 'paperx'),
         'selectors' => [
-            '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme' => 'background-color: {{VALUE}};',
+            '{{WRAPPER}} .el-l-1-custom-post-item-paperx' => 'background-color: {{VALUE}};',
         ],
     ]
 );
@@ -851,7 +851,7 @@ $this->add_group_control(
     [
         'name' => 'box_shadow',
         'description' => __('Add box shadow to the container.', 'paperx'),
-        'selector' => '{{WRAPPER}} .el-l-1-custom-post-item-vasutheme',
+        'selector' => '{{WRAPPER}} .el-l-1-custom-post-item-paperx',
     ]
 );
 
