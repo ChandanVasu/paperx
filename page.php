@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#page
  *
- * @package vasuthemeName
+ * @package paperx
  */
 
 get_header();
 ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main">
+<div id="primary" class="post-content-area-paperx">
+    <main id="main" class="site-main-area-paperx">
         <?php
         while (have_posts()) :
             the_post();
@@ -33,39 +33,17 @@ get_header();
                     ?>
                 </div><!-- .entry-content -->
 
-                <?php if (get_edit_post_link()) : ?>
-                    <footer class="entry-footer">
-                        <?php
-                        edit_post_link(
-                            sprintf(
-                                wp_kses(
-                                    /* translators: %s: Name of current post. Only visible to screen readers */
-                                    __('Edit <span class="screen-reader-text">%s</span>', 'paperx'),
-                                    [
-                                        'span' => [
-                                            'class' => [],
-                                        ],
-                                    ]
-                                ),
-                                get_the_title()
-                            ),
-                            '<span class="edit-link">',
-                            '</span>'
-                        );
-                        ?>
-                    </footer><!-- .entry-footer -->
-                <?php endif; ?>
             </article><!-- #post-<?php the_ID(); ?> -->
 
         <?php endwhile; ?>
     </main><!-- #main -->
+    <div class='theme-post-sidebar'>
+        <?php get_sidebar(); ?>
+
+    </div>
 </div><!-- #primary -->
 
-<div id="sidebar">
-    <?php if ( is_active_sidebar( 'main-sidebar' ) ) : ?>
-        <?php dynamic_sidebar( 'main-sidebar' ); ?>
-    <?php endif; ?>
-</div>
+
 
 
 <?php

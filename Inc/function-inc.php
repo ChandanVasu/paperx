@@ -1,17 +1,10 @@
 <?php
 
-// Enqueue editor styles
 function theme_editor_styles() {
-    add_editor_style('editor-styles.css'); // Replace 'editor-styles.css' with the name of your custom CSS file
+    add_editor_style('editor-styles.css');
 }
 add_action('admin_init', 'theme_editor_styles');
 
-
-
-
-
-
-// Register custom block patterns
 function theme_register_block_patterns() {
     register_block_pattern(
         'theme/custom-heading',
@@ -30,22 +23,17 @@ function theme_register_block_patterns() {
 }
 add_action('init', 'theme_register_block_patterns');
 
-
 function theme_register_block_styles() {
-    // Register a custom block style for the heading block
     register_block_style(
-        'core/heading', // Block name
+        'core/heading',
         array(
-            'name'         => 'theme-custom-heading', // Style name
-            'label'        => __('Theme Custom Heading', 'paperx'), // Style label
-            'inline_style' => '.wp-block-heading.theme-custom-heading { color: red; }', // CSS styles
+            'name'         => 'theme-custom-heading',
+            'label'        => __('Theme Custom Heading', 'paperx'),
+            'inline_style' => '.wp-block-heading.theme-custom-heading { color: red; }',
         )
     );
-
-    // You can register more block styles for other blocks as needed
 }
 add_action('init', 'theme_register_block_styles');
-
 
 function theme_widgets_init() {
     register_sidebar( array(

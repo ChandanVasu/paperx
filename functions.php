@@ -1,5 +1,5 @@
 <?php
-// Add support for wide alignment
+
 function theme_setup() {
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
@@ -17,14 +17,12 @@ function theme_setup() {
         'header-text'   => false,
     ));
     add_theme_support('custom-background');
-    add_theme_support('align-wide'); // Recommended: Add support for wide alignment
+    add_theme_support('align-wide');
     register_nav_menus(array(
         'primary-menu' => __('Primary Menu', 'paperx'),
     ));
 }
 add_action('after_setup_theme', 'theme_setup');
-
-// include_once get_template_directory() . '/Plugin/custom-post-types.php';
 
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('elementor-frontend');
@@ -39,7 +37,6 @@ function theme_options_page() {
     <?php
 }
 
-// Register the "Theme Options" menu
 function register_theme_options_menu() {
     add_menu_page(
         'Theme Options',
@@ -47,20 +44,18 @@ function register_theme_options_menu() {
         'manage_options',
         'theme-options',
         'theme_options_page',
-        get_theme_file_uri('Assets/Image/icon.svg'), // Updated URL with home_url() and corrected path
+        get_theme_file_uri('Assets/Image/icon.svg'),
         10
     );
 }
 add_action('admin_menu', 'register_theme_options_menu');
 
-// Include the file containing the callback function for the sub-menu
 include_once get_template_directory() . '/Inc/Theme Setting/header.php';
 include_once get_template_directory() . '/Inc/Theme Setting/logo.php';
 include_once get_template_directory() . '/Inc/Theme Setting/single.php';
 include_once get_template_directory() . '/Inc/Theme Setting/footer.php';
 include_once get_template_directory() . '/Inc/Theme Setting/archive.php';
 include_once get_template_directory() . '/Inc/Demo.php';
-// include_once get_template_directory() . '/Inc/paperx-template.php';
 
 function register_vasutheme_widget($widgets_manager) {
 
@@ -85,16 +80,17 @@ function register_vasutheme_widget($widgets_manager) {
     $widgets_manager->register(new \Post_Meta_Widget());
     $widgets_manager->register(new \Breadcrumb_Widget());
     $widgets_manager->register(new \Post_Excerpt_Widget());
-    // $widgets_manager->register(new \Archive_Title());
+    $widgets_manager->register(new \Custom_Nav_Menu_Widget());
+
 }
 add_action('elementor/widgets/register', 'register_vasutheme_widget');
 
 function add_elementor_widget_categories($elements_manager) {
 
     $categories = [];
-    $categories['Paper X '] =
+    $categories['Paper X'] =
         [
-            'title' => 'Paper X ',
+            'title' => 'Paper X',
             'icon'  => 'fa fa-plug'
         ];
 
@@ -110,21 +106,11 @@ function add_elementor_widget_categories($elements_manager) {
 add_action('elementor/elements/categories_registered', 'add_elementor_widget_categories');
 
 function enqueue_styles_and_scripts() {
-    // Enqueue CSS files
-    wp_enqueue_style('Grid-Post-1', get_template_directory_uri() . '/Assets/Styles/Elementor/Grid-Post-1.css');
-    wp_enqueue_style('Grid-Post-2', get_template_directory_uri() . '/Assets/Styles/Elementor/Grid-Post-2.css');
     wp_enqueue_style('Main Css', get_template_directory_uri() . '/Assets/Styles/Elementor/main.css');
-    wp_enqueue_style('List-Post', get_template_directory_uri() . '/Assets/Styles/Elementor/List-Post.css');
-    wp_enqueue_style('List-Post-2', get_template_directory_uri() . '/Assets/Styles/Elementor/List-Post-2.css');
-    wp_enqueue_style('vasutheme Css', get_template_directory_uri() . '/Assets/Styles/vasutheme.css');
-    wp_enqueue_style('Header1 css', get_template_directory_uri() . '/Assets/Styles/Header/header1.css');
     wp_enqueue_style('Header css', get_template_directory_uri() . '/Assets/Styles/Header/header.css');
-    wp_enqueue_style('Search css', get_template_directory_uri() . '/Assets/Styles/Header/search.css');
-    wp_enqueue_style('Hamburger css', get_template_directory_uri() . '/Assets/Styles/Header/hamburger.css');
     wp_enqueue_style('Theme', get_template_directory_uri() . '/Assets/Styles/main.css');
     wp_enqueue_style('Single Post ', get_template_directory_uri() . '/Assets/Styles/Theme/singlepost.css');
 
-    // Enqueue custom scripts
     wp_enqueue_script('footer-script', get_template_directory_uri() . '/Assets/script/main.js');
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles_and_scripts');
@@ -142,18 +128,15 @@ function ocdi_plugin_intro_text($default_text) {
 }
 add_filter('ocdi/plugin_intro_text', 'ocdi_plugin_intro_text');
 
-// Enqueue editor styles
 function theme_editor_styles() {
-    add_editor_style('editor-styles.css'); // Replace 'editor-styles.css' with the name of your custom CSS file
+    add_editor_style('editor-styles.css');
 }
 add_action('admin_init', 'theme_editor_styles');
 
-// Set content width
 if (!isset($content_width)) {
-    $content_width = 900; // Set the desired content width in pixels
+    $content_width = 900;
 }
 
-// Enqueue comment reply script
 function enqueue_comment_reply_script() {
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -161,9 +144,6 @@ function enqueue_comment_reply_script() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_comment_reply_script');
 
-
-
-// Register Sidebar
 function custom_theme_widgets_init() {
     register_sidebar( array(
         'name'          => esc_html__( 'Main Sidebar', 'paperx' ),
@@ -177,6 +157,4 @@ function custom_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'custom_theme_widgets_init' );
 
-// Disable block editor from managing widgets
 add_filter( 'use_widgets_block_editor', '__return_false' );
-

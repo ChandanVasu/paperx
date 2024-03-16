@@ -1,19 +1,29 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package paperx
+ */
+
+?>
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
     <?php wp_head();?>
-<style>
-    *{
-        margin: 0;
-        padding:0;
-    }
-</style>
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <!-- Your header content -->
 
 <div class="header-content-vasutheme">
     <?php
@@ -32,8 +42,7 @@
         // Output default header content (header1)
         get_template_part('Template/Header-Template/header1');
     }
+    wp_head();
     ?>
 </div>
-
-<?php wp_head();?>
 

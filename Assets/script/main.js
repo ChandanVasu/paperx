@@ -59,3 +59,24 @@ function callHamburger() {
         closeIcon.style.display = 'none';
       }
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.paper-header-menu li .sub-menu').forEach(subMenu => {
+      let timeoutId;
+  
+      const showSubMenu = () => {
+        clearTimeout(timeoutId);
+        subMenu.style.display = 'block';
+      };
+  
+      const hideSubMenuWithDelay = () => {
+        timeoutId = setTimeout(() => subMenu.style.display = 'none', 250); // 3 second delay
+      };
+  
+      subMenu.parentElement.addEventListener('mouseenter', showSubMenu);
+      subMenu.parentElement.addEventListener('mouseleave', hideSubMenuWithDelay);
+    });
+  });
+  
+  

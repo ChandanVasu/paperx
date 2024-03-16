@@ -1,10 +1,42 @@
-.header-demo {
+@font-face {
+    font-family: "Batangas";
+    src: url("../../Font/Batangas.otf");
+}
+
+@font-face {
+
+    font-family: "Roboto-Bold";
+    src: url("../../../Font/Roboto-Bold.ttf");
+
+}
+
+.vasutheme-header1-container {
     width: 100%;
-    height: 50px;
-    background-color: aqua;
+    padding: 0px 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+
+}
+
+.vasutheme-header1-logo-link {
+    font-family: 'Batangas';
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-decoration: none !important;
+    /* Corrected typo here */
+    text-transform: capitalize;
+}
+
+.vasutheme-header1-logo img {
+    height: 50px;
+    width: 150px;
 }
 
 
@@ -15,23 +47,32 @@
     margin: 0;
 }
 
-.mobile-nav li, .mobile-nav ul{
+.mobile-nav li,
+.mobile-nav ul {
     margin: 0;
     padding: 0;
-margin-bottom: 10px;
+    margin-bottom: 10px;
     list-style-type: none;
 }
 
-.mobile-nav li a{
+.mobile-nav li a, 
+.paper-header-menu li a {
     text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+
+.paper-header-menu li a:hover{
+    color: var(--primary-color);
 }
 
 .paper-header-menu li {
     display: inline-block;
     margin-right: 10px;
+    
 }
 
-.image-menu-close-icon{
+.image-menu-close-icon {
     display: none;
 }
 
@@ -45,9 +86,59 @@ margin-bottom: 10px;
     z-index: 999;
     overflow-y: auto;
     padding: 20px;
+    transition-duration: 0.5s;
+
 }
 
-.search-box-mobile-menu{
+.paper-header-menu .menu-item-has-children > a::after {
+    content: '';
+    display: inline-block;
+    width: 10px; /* Adjust the width of the image */
+    height: 10px; /* Adjust the height of the image */
+    background-image: url('drop.png'); /* Relative path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px; /* Adjust spacing */
+  }
+
+  .paper-header-menu .sub-menu {
+    
+    display: none;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position: absolute;
+
+  }
+
+
+  .paper-header-menu .sub-menu li {
+    display: block;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 5px;
+
+  }
+
+
+  
+  /* Style sub-menu links */
+  .paper-header-menu .sub-menu a {
+    text-decoration: none;
+    color: #333
+    /* Sub-menu link color */
+  }
+  
+  /* Hover effect for sub-menu items */
+  .paper-header-menu .sub-menu li:hover {
+    background-color: #82c5c658;
+
+    /* Change background color on hover */
+  }
+
+.search-box-mobile-menu {
     width: 100%;
     height: 30px;
     display: flex;
@@ -55,29 +146,79 @@ margin-bottom: 10px;
     justify-content: center;
     margin: 10px 0px;
 }
-.search-box-mobile-menu .search-form{
 
-}
-
-.header-content-vasutheme{
+.header-content-vasutheme {
     padding: 0;
     margin: 0;
 
 }
 
 
+.image-menu-icon {
+    height: 30px;
+    width: 30px;
+}
 
-.menu-mobile-icon{
+.image-menu-close-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.menu-mobile-icon {
     display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
-    .menu-mobile-icon{
+    .vasutheme-header1-logo-link {
+        font-size: 20px;
+
+    }
+
+    .menu-mobile-icon {
         display: block;
     }
 
-    .paper-header-menu{
+    .paper-header-menu {
         display: none;
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    .vasutheme-header1-menu {
+      display: none;
+    }
+  
+    .header1-search-box{
+      display: none;
+    }
+  
+    .vasutheme-header1-container {
+      width: 100%;
+      padding: 5px 20px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      display: flex;
+      /* Use flexbox to align items horizontally */
+      justify-content: space-between;
+      /* Spread items horizontally */
+      align-items: center;
+    }
+  
+    .vasu-theme-mobile-menu-header-1 {
+      display: inline-flex !important;
+      flex-direction: row;
+      
+      /* Hide mobile menu on small screens */
+    }
+  
+  
+    .mobile-menu-search-box{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 21px;
+    
+    }
+  }

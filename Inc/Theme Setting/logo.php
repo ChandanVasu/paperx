@@ -7,43 +7,7 @@ if (!defined('ABSPATH')) {
 
 function theme_setting_logo() {
     ?>
-    <style>
-        .theme_setting_logo input[type="file"] {
-            display: none; /* Hide the default file input */
-        }
 
-        .theme_setting_logo .upload-logo-btn {
-            display: inline-block;
-            margin-left: 20px;
-            padding: 8px 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .theme_setting_logo .form-table td{
-            display: inline-flex;
-            align-items: center;
-        }
-
-        .logo-image{
-            max-width: 201px;
-            width: 123px;
-            border-radius: 20px;
-
-        }
-
-
-        .theme_setting_logo .upload-logo-btn:hover {
-            background-color: #0056b3;
-        }
-
-        .theme_setting_logo .remove-logo-btn {
-            display: inline-block;
-            margin-left: 10px; /* Adjust the margin as needed */
-        }
-    </style>
     <div class="theme_setting_logo">
         <h2>Logo Setup</h2>
         <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" enctype="multipart/form-data">

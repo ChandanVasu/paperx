@@ -3,7 +3,7 @@
  * Plugin Name: Custom Title Widget
  * Description: Adds a custom Elementor widget for titles with various styling options.
  * Version: 1.0
- * Author: Your Name
+ * Author: paperx
  */
 
 if (!defined('ABSPATH')) {
@@ -25,7 +25,7 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return ['Paper X '];
+        return ['Paper X'];
     }
 
     protected function _register_controls() {

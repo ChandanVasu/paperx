@@ -10,7 +10,7 @@ class Grid_Post_1 extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return __('Grid Style 1 - vasuthemes', 'paperx');
+        return __('Grid Post 1', 'paperx');
     }
 
     // Define widget icon
@@ -23,7 +23,7 @@ class Grid_Post_1 extends \Elementor\Widget_Base
     // Define widget categories
     public function get_categories()
     {
-        return ['Paper X '];
+        return ['Paper X'];
     }
 
     protected function render() {

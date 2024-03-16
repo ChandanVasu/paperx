@@ -4,8 +4,10 @@
   top: 0px;
 }
 
-body {}
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 
 input[type="submit"] {
@@ -84,41 +86,6 @@ td {
   padding: 8px;
   /* 0.5em */
   border: 1px solid #ccc;
-}
-
-/* Targeting unordered lists */
-ul,
-ol {
-  margin: 0;
-  /* Remove default margin */
-  padding: 20px;
-  /* Remove default padding */
-  line-height: 1.4;
-  text-decoration: n;
-}
-
-/* Styling list items */
-ul li,
-ol li {
-  margin-bottom: 10px;
-  /* Add margin between list items */
-}
-
-/* Styling links inside list items */
-ul li a,
-ol li a {
-  text-decoration: none;
-  /* Remove underline */
-  color: #333;
-  /* Change link color */
-}
-
-/* Styling nested lists */
-ul ul {
-  margin-top: 5px;
-  /* Add space above nested lists */
-  margin-left: 20px;
-  /* Indent nested lists */
 }
 
 
@@ -307,3 +274,90 @@ select {
     margin-left: 0;
   }
 }
+
+
+
+.author-name-last-updated .author-name a {
+  font-family: 'Batangas';
+  font-size: 15px;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.author-name-last-updated .author-name a:hover {
+  color: rgb(225, 9, 9);
+
+}
+
+.author-info {
+  font-family: 'Batangas';
+  color: rgb(80, 80, 80);
+  display: flex;
+  gap: 10px;
+}
+
+.author-info p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.author-info img {
+  border: 2px dotted black;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+}
+
+.author-info img:hover {
+  border: 2px dotted rgb(255, 0, 0);
+
+}
+
+
+
+.search-box {
+  display: inline-block;
+  position: relative;
+}
+
+.search-box input[type="search"] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box button[type="submit"] {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);    
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.9s ease;
+}
+
+.search-box button[type="submit"]:hover {
+  transform: scale(1.1);
+
+}
+
+
+@media only screen and (max-width: 600px) {
+.search input[type="search"] {
+  width: 250px;
+  /* padding: 10px; */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+}
+
+
+

@@ -132,3 +132,83 @@
 }
 
 }
+
+
+/* Targeting unordered lists */
+.paperx-post-content-single1 ul,
+.paperx-post-content-single1 ol {
+  margin: 0;
+  /* Remove default margin */
+  padding: 20px;
+  /* Remove default padding */
+  line-height: 1.4;
+  text-decoration: n;
+}
+
+/* Styling list items */
+.paperx-post-content-single1 ul li,
+.paperx-post-content-single1 ol li {
+  margin-bottom: 10px;
+  /* Add margin between list items */
+}
+
+/* Styling links inside list items */
+.paperx-post-content-single1ul li a,
+.paperx-post-content-single1 ol li a {
+  text-decoration: none;
+  /* Remove underline */
+  color: #333;
+  /* Change link color */
+}
+
+/* Styling nested lists */
+.paperx-post-content-single1 ul ul {
+  margin-top: 5px;
+  /* Add space above nested lists */
+  margin-left: 20px;
+  /* Indent nested lists */
+}
+
+
+
+
+
+
+
+
+/* This Is Page Css File */
+
+
+
+.post-content-area-paperx{
+    padding: 10px 80px;
+    display: flex;
+}
+
+.site-main-area-paperx h1,
+.site-main-area-paperx h2,
+.site-main-area-paperx h3,
+.site-main-area-paperx h4,
+.site-main-area-paperx p{
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.site-main-area-paperx{
+    width: 75%;
+}
+
+@media (max-width:800px){
+    .site-main-area-paperx{
+        width: 100%;
+
+
+    }
+    .post-content-area-paperx{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+
+    }
+}

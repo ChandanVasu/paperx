@@ -11,78 +11,7 @@ if (!defined('ABSPATH')) {
 function theme_setting_single_post() {
     // Function to display the content of the Single Post Setup submenu page
     ?>
-<style>
-    /* CSS styles */
-    .theme_setting_single_post {
-        margin-top: 20px !important;
-    }
 
-    .theme_setting_single_post .form-table {
-        border-collapse: separate !important;
-        border-spacing: 10px !important;
-    }
-
-    .theme_setting_single_post .form-table th,
-    .theme_setting_single_post .form-table td {
-        padding: 10px !important;
-    }
-
-    .theme_setting_single_post label {
-        display: inline-block !important;
-        position: relative !important;
-        border: 2px solid transparent !important;
-        border-radius: 8px !important;
-        overflow: hidden !important;
-        cursor: pointer !important;
-    }
-
-    .theme_setting_single_post label:hover {
-        border-color: #ccc !important;
-    }
-
-    /* .theme_setting_single_post input[type="radio"] {
-            display: none!important;
-        } */
-
-    .theme_setting_single_post label .radio-image {
-        background-color: rgba(182, 244, 239, 0.605);
-        width: 150px;
-        height: 100px;
-        border-radius: 5px;
-        display: block !important;
-
-    }
-
-    .form-table input.tog,
-    .form-table input[type=radio] {
-        position: absolute;
-        top: 10px;
-        /* left: 0; */
-        right: 10px;
-    }
-
-    .theme_setting_single_post .radio-container {
-        display: flex;
-        gap: 20px;
-    }
-
-    .radio-item {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        border-radius: 5px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .radio-item p {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 600;
-        font-size: 15px;
-    }
-</style>
 
 <div class="theme_setting_single_post">
     <h2>Single Post Setup</h2>

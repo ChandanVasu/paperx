@@ -20,7 +20,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
 
     // Widget Categories
     public function get_categories() {
-        return ['Paper X '];
+        return ['Paper X'];
     }
 
     // Widget Controls
@@ -126,7 +126,7 @@ class Comment_Widget extends \Elementor\Widget_Base {
 
     // Widget Categories
     public function get_categories() {
-        return ['Paper X '];
+        return ['Paper X'];
     }
 
     // Widget Controls
@@ -160,7 +160,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return ['Paper X '];
+        return ['Paper X'];
     }
 
     protected function _register_controls() {
@@ -265,7 +265,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
     }
 
     public function get_categories() {
-        return [ 'Paper X ' ];
+        return [ 'Paper X' ];
     }
 
     protected function _register_controls() {
@@ -359,7 +359,7 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'Paper X ' ];
+        return [ 'Paper X' ];
     }
 
     protected function _register_controls() {
@@ -466,7 +466,7 @@ class Breadcrumb_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'Paper X ' ];
+        return [ 'Paper X' ];
     }
 
     protected function _register_controls() {
@@ -500,7 +500,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'Paper X ' ];
+        return [ 'Paper X' ];
     }
 
     protected function _register_controls() {
@@ -603,5 +603,121 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
         }
     }
 }
+
+
+
+// Define namespace and class name
+
+class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
+
+    // Define widget name
+    public function get_name() {
+        return 'custom-nav-menu-widget';
+    }
+
+    // Define widget title
+    public function get_title() {
+        return __( 'Custom Nav Menu', 'elementor' );
+    }
+
+    // Define widget icon
+    public function get_icon() {
+        return 'eicon-nav-menu';
+    }
+
+    // Define widget categories
+    public function get_categories() {
+        return [ 'Paper X' ];
+    }
+
+    // Define widget controls
+    protected function _register_controls() {
+        $this->start_controls_section(
+            'section_menu',
+            [
+                'label' => __( 'Menu', 'elementor' ),
+            ]
+        );
+
+        $this->add_control(
+            'menu',
+            [
+                'label' => __( 'Select Menu', 'elementor' ),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'options' => $this->get_available_menus(),
+                'default' => '',
+            ]
+        );
+
+        $this->end_controls_section();
+
+        $this->start_controls_section(
+            'section_style',
+            [
+                'label' => __( 'Style', 'elementor' ),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        // You can add style controls here if needed
+
+        $this->end_controls_section();
+    }
+
+    // Define widget content output
+    protected function render() {
+        $settings = $this->get_settings_for_display();
+
+        $menu_id = ! empty( $settings['menu'] ) ? $settings['menu'] : '';
+
+        if ( $menu_id ) {
+            ?>
+            <nav class="paper-header-menu">
+                <?php
+                wp_nav_menu(array(
+                    'menu' => $menu_id,
+                    'container' => false,
+                    'menu_class' => 'primary-menu',
+                    'fallback_cb' => false,
+                ));
+                ?>
+            </nav>
+
+            <div class='menu-mobile-icon'>
+                <img onclick="callHamburger()" class="image-menu-close-icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/Assets/Image/close.png" alt="">
+                <img class="image-menu-icon" onclick="callHamburger()" src="<?php echo esc_url(get_template_directory_uri()); ?>/Assets/Image/menu.png" alt="">
+                <div class="paper-header-menu-mobile">
+
+                    <div class='search-box-mobile-menu'>
+                        <?php get_search_form(); ?>
+                    </div>
+
+                    <nav class="mobile-nav">
+                        <?php
+                        wp_nav_menu(array(
+                            'menu' => $menu_id,
+                            'container' => false,
+                            'menu_class' => 'primary-menu',
+                            'fallback_cb' => false,
+                        ));
+                        ?>
+                    </nav>
+                </div>
+            </div>
+            <?php
+        }
+    }
+
+    // Get available menus
+    protected function get_available_menus() {
+        $menus = wp_get_nav_menus();
+        $options = [];
+        foreach ( $menus as $menu ) {
+            $options[$menu->term_id] = $menu->name;
+        }
+        return $options;
+    }
+}
+
 
 
