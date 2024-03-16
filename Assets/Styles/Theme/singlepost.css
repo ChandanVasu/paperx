@@ -3,7 +3,11 @@
     width: 100%;
 }
 
-
+.paperx-post-title-single1{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .paperx-single1-post{
     display: flex;
@@ -126,6 +130,8 @@
 }
 .paperx-post-title-single1{
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .paperx-author-single1{
     margin: 10px 0px;

@@ -45,7 +45,7 @@ a:focus {
 }
 
 .ocdi__gl-item-title{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family: sans-serif;
     font-weight: 700;
     font-size: 15px;
 }

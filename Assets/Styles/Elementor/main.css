@@ -130,13 +130,15 @@
   align-items: center;
   margin-top: 10px;
   bottom: 10px;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
+
+
 .el-l-1-post-meta-paperx a {
   color: black;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
 }
 
@@ -215,7 +217,7 @@
   line-height: normal;
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
 }
 
 .el-g-2-post-title-paperx:hover {
@@ -258,7 +260,7 @@
   margin-bottom: 5px;
   background-color: #ffffff;
   font-size: 12px;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
 }
 
 .el-g-2-category-meta-paperx a:hover {
@@ -273,13 +275,13 @@
   align-items: center;
   margin-top: 10px;
   bottom: 10px;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
 .el-g-2-post-meta-paperx a {
   color: black;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
 }
 
@@ -323,7 +325,7 @@
   line-height: normal;
   font-size: 20px;
   font-weight: 00;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -382,7 +384,7 @@
   border-radius: 40px 10px 40px 10px;
   background-color: black;
   font-size: 12px;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   left: 10px;
   bottom: 20px;
 }
@@ -400,14 +402,14 @@
   align-items: center;
   margin-top: 10px;
   bottom: 10px;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   
 }
 
 .el-g-1-post-meta-paperx a {
   color: black;
-  font-family: 'Rubik', sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
 }
 

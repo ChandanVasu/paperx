@@ -123,7 +123,7 @@ comment_form(array(
 /* Adjusting width for each input field */
 .comment-form-author-email input[type="text"],
 .comment-form-author-email input[type="email"] {
-  font-family: 'Batangas';
+  font-family: sans-serif;
   background-color: transparent;
   border: 0px;
   border-radius: 8px;
@@ -165,7 +165,7 @@ comment_form(array(
   font-style: normal;
 
   font-weight: bold;
-  font-family: 'Batangas';
+  font-family: sans-serif;
   display: flex;
   align-items: center;
 }
@@ -173,7 +173,7 @@ comment_form(array(
 /* Styling the comment date */
 .comment .commentmetadata a {
   float: right;
-  font-family: 'Batangas';
+  font-family: sans-serif;
   text-decoration: none;
   font-size: 15px;
   color: #000000;
@@ -202,7 +202,7 @@ cite {
 }
 
 .comment p{
-  font-family: 'Batangas';
+  font-family: sans-serif;
   margin-left: 56px;
   /* margin-top: -10px; */
 }
@@ -210,14 +210,14 @@ cite {
 .comment .reply{
   font-size: 20px;
   text-decoration: none;
-  font-family: 'Batangas';
+  font-family: sans-serif;
   margin-top: 5px;
 margin-left: 50px;
 }
 
 .comment-respond .comment-reply-title {
   margin-top: 20px;
-  font-family: 'Batangas';
+  font-family: sans-serif;
 
 }
 .comment .children{
@@ -234,21 +234,21 @@ margin-left: 50px;
 
 .comment-respond .comment-notes, .comment-respond .logged-in-as{
   display: block;
-  font-family: 'Batangas';
+  font-family: sans-serif;
   margin-bottom: 10px;
   margin-top: -14px;
 }
 
 .comment-respond .comment-form-cookies-consent {
   display: block;
-  font-family: 'Batangas';
+  font-family: sans-serif;
   margin-bottom: 10px;
 }
 
 /* Styling the comment form placeholder and text font */
 .comment-form-comment textarea::placeholder,
 .comment-form-comment textarea {
-  font-family: 'Batangas';
+  font-family: sans-serif;
     font-size: 14px; /* Change the font size as needed */
     color: #666; /* Change the text color as needed */
 }
