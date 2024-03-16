@@ -19,7 +19,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
 
     // Widget Categories
     public function get_categories() {
-        return [ 'Vasu X' ];
+        return [ 'Paper X ' ];
     }
 
     // Widget Controls

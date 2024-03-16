@@ -20,7 +20,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
 
     // Widget Categories
     public function get_categories() {
-        return ['Vasu X'];
+        return ['Paper X '];
     }
 
     // Widget Controls
@@ -126,7 +126,7 @@ class Comment_Widget extends \Elementor\Widget_Base {
 
     // Widget Categories
     public function get_categories() {
-        return ['Vasu X'];
+        return ['Paper X '];
     }
 
     // Widget Controls
@@ -145,9 +145,6 @@ class Comment_Widget extends \Elementor\Widget_Base {
 
 
 
-
-
-
 class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
 
     public function get_name() {
@@ -163,7 +160,7 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return ['Vasu X'];
+        return ['Paper X '];
     }
 
     protected function _register_controls() {
@@ -268,7 +265,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
     }
 
     public function get_categories() {
-        return [ 'Vasu X' ];
+        return [ 'Paper X ' ];
     }
 
     protected function _register_controls() {
@@ -362,7 +359,7 @@ class Post_Meta_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'Vasu X' ];
+        return [ 'Paper X ' ];
     }
 
     protected function _register_controls() {
@@ -469,7 +466,7 @@ class Breadcrumb_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'Vasu X' ];
+        return [ 'Paper X ' ];
     }
 
     protected function _register_controls() {
@@ -503,7 +500,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return [ 'Vasu X' ];
+        return [ 'Paper X ' ];
     }
 
     protected function _register_controls() {

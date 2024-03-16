@@ -22,7 +22,7 @@
                 the_content();
             } else {
                 // Output default single post content
-                get_template_part('Template/Single-post/single1');
+                get_template_part('Template/Single-post/single4');
             }
 
         // End of the loop.

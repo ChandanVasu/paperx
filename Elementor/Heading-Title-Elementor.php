@@ -25,7 +25,7 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return ['Vasu X'];
+        return ['Paper X '];
     }
 
     protected function _register_controls() {

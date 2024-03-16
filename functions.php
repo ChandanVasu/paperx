@@ -92,9 +92,9 @@ add_action('elementor/widgets/register', 'register_vasutheme_widget');
 function add_elementor_widget_categories($elements_manager) {
 
     $categories = [];
-    $categories['Vasu X'] =
+    $categories['Paper X '] =
         [
-            'title' => 'Vasu X',
+            'title' => 'Paper X ',
             'icon'  => 'fa fa-plug'
         ];
 

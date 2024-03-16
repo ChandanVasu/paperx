@@ -15,6 +15,6 @@
 
         </div>
 
-        <?php get_template_part('Template/Header-Template\Header-Part/header-menu'); ?>
+        <?php get_template_part('Template/Header-Template\Header-Part/nav-menu'); ?>
 
 </header>

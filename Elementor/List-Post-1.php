@@ -23,7 +23,7 @@ class List_Post_1 extends \Elementor\Widget_Base
     // Define widget categories
     public function get_categories()
     {
-        return ['Vasu X'];
+        return ['Paper X '];
     }
 
     protected function render() {

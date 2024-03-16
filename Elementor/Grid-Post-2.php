@@ -23,7 +23,7 @@ class Grid_Post_2 extends \Elementor\Widget_Base
     // Define widget categories
     public function get_categories()
     {
-        return ['Vasu X'];
+        return ['Paper X '];
     }
 
     protected function render() {
