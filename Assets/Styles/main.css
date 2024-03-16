@@ -39,12 +39,6 @@ input[type="submit"]:hover {
 }
 
 
-p {
-font-size: 16px;
-margin-bottom: 8px;
-color: #2d2d2d;
-
-}
 
 a {
   color: #130bff;
@@ -66,9 +60,32 @@ th, td {
   padding: 8px; /* 0.5em */
   border: 1px solid #ccc;
 }
-ul {
-  list-style-type: none;
+
+/* Targeting unordered lists */
+ul , ol{
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Remove default padding */
+  line-height: 1.4;
+  text-decoration: n;
 }
+
+/* Styling list items */
+ul li, ol li {
+  margin-bottom: 10px; /* Add margin between list items */
+}
+
+/* Styling links inside list items */
+ul li a, ol li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Change link color */
+}
+
+/* Styling nested lists */
+ul ul {
+  margin-top: 5px; /* Add space above nested lists */
+  margin-left: 20px; /* Indent nested lists */
+}
+
 
 /* Forms */
 input[type="text"],
@@ -183,29 +200,32 @@ select {
 
 
 .theme-post-grid{
-  padding: 40px;
+  padding: 10px 80px;
   display: flex;
 }
 
 .theme-post-sidebar{
-  width: 40%;
+  width: 30%;
   position: sticky;
+  padding: 0px 30px;
   top: 80px;
   margin-left: 20px;
-  height: 500px;
-
+  height: 100%; /* Ensure the sidebar takes the full height */
+  overflow-y: auto;
 }
 
 .theme-post-grid .el-g-1-grid-container {
   padding: 2px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 20px;                         /
+  grid-gap: 20px; 
+  width: 80%;                        /
 }
 
 @media (max-width:1000px) {
   .theme-post-grid .el-g-1-grid-container {
       grid-template-columns: repeat(2, 1fr); 
+      width: 100%;
   }
   .theme-post-grid{
     padding: 10px !important;
@@ -225,7 +245,9 @@ select {
 
 @media (max-width:800px) {
   .theme-post-grid .el-g-1-grid-container {
-      grid-template-columns: repeat(1, 1fr); }
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+     }
 
   .theme-post-grid{
     padding: 10px !important;

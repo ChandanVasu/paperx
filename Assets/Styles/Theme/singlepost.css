@@ -1,0 +1,111 @@
+.paperx-single1-post img{
+    height: 100%;
+    width: 100%;
+}
+
+.paperx-single1-post{
+    display: flex;
+    padding: 20px 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.paperx-single1-content-area {
+    width: 65%; /* Adjusted width */
+}
+
+.paperx-single1-sidebar {
+    width: 35%; /* Adjusted width */
+    margin-left: 20px;
+    padding: 0px 50px;
+    position: sticky;
+    top: 100px;
+    height: 100%; /* Ensure the sidebar takes the full height */
+    overflow-y: auto; /* Add scrollbar if content exceeds sidebar height */
+}
+
+.paperx-post-content-single1 h1,
+.paperx-post-content-single1 h2,
+.paperx-post-content-single1 h3,
+.paperx-post-content-single1 h4,
+.paperx-post-content-single1 h5,
+.paperx-post-content-single1 h6,
+.paperx-post-content-single1 p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.paperx-breadcrumb-single1 {
+    display: inline-flex; /* Use inline-flex to prevent line break */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%;
+}
+
+.paperx-breadcrumb-single1 li{
+    padding: 0px 5px;
+}
+
+.paperx-breadcrumb-single1 li:not(:last-child)::after {
+    content: '>'; /* Add arrow after the breadcrumb item */
+    margin-left: 5px; /* Adjust spacing between breadcrumb item and arrow */
+    color: #333; /* Arrow color */
+}
+
+
+.paperx-breadcrumb-single1 li a {
+    color: #333; /* Change breadcrumb link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.paperx-breadcrumb-single1 li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.paperx-breadcrumb-single1 li:last-child {
+    margin-right: 10px; /* Adjust spacing between breadcrumb items */
+    display: inline;
+    overflow: hidden;    
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Show ellipsis for overflowed items */
+    font-weight: bold; /* Make the last item bold */
+}
+
+
+
+@media (max-width: 800px)  { 
+    
+    .paperx-single1-post{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .paperx-single1-content-area {
+        width: 100%; /* Adjusted width */
+    }
+
+.paperx-post-content-single1 h1,
+.paperx-post-content-single1 h2,
+.paperx-post-content-single1 h3,
+.paperx-post-content-single1 h4,
+.paperx-post-content-single1 h5,
+.paperx-post-content-single1 h6,
+.paperx-post-content-single1 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.paperx-single1-sidebar {
+    width: 100%; /* Adjusted width */
+    padding: 10px 10px;
+    margin-left: 0px;
+    
+}
+.paperx-post-title-single1{
+    font-size: 20px;
+}
+}

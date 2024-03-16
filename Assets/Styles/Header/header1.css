@@ -53,6 +53,13 @@
   text-transform: capitalize;
 }
 
+@media (max-width:800px){
+  .vasutheme-header1-logo-link{
+    font-size: 20px;
+
+  }
+}
+
 
 /* Menu styles */
 .vasutheme-header1-menu {
