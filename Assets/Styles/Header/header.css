@@ -55,21 +55,47 @@
     list-style-type: none;
 }
 
-.mobile-nav li a, 
+.mobile-nav li a,
 .paper-header-menu li a {
     text-transform: capitalize;
     color: black;
     text-decoration: none;
 }
 
-.paper-header-menu li a:hover{
+.paper-header-menu-mobile .sub-menu {
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 3px;
+
+}
+
+.paper-header-menu-mobile .menu-item-has-children>a::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    /* Adjust the width of the image */
+    height: 10px;
+    /* Adjust the height of the image */
+    background-image: url('drop.png');
+    /* Relative path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    /* Adjust spacing */
+}
+
+
+.paper-header-menu li a:hover,
+.paper-header-menu-mobile .sub-menu li a:hover {
     color: var(--primary-color);
 }
 
 .paper-header-menu li {
     display: inline-block;
     margin-right: 10px;
-    
+
 }
 
 .image-menu-close-icon {
@@ -90,19 +116,23 @@
 
 }
 
-.paper-header-menu .menu-item-has-children > a::after {
+.paper-header-menu .menu-item-has-children>a::after {
     content: '';
     display: inline-block;
-    width: 10px; /* Adjust the width of the image */
-    height: 10px; /* Adjust the height of the image */
-    background-image: url('drop.png'); /* Relative path to your image */
+    width: 10px;
+    /* Adjust the width of the image */
+    height: 10px;
+    /* Adjust the height of the image */
+    background-image: url('drop.png');
+    /* Relative path to your image */
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 5px; /* Adjust spacing */
-  }
+    margin-left: 5px;
+    /* Adjust spacing */
+}
 
-  .paper-header-menu .sub-menu {
-    
+.paper-header-menu .sub-menu {
+
     display: none;
     margin-top: 10px;
     background-color: #ffffff;
@@ -111,32 +141,32 @@
     z-index: 999;
     position: absolute;
 
-  }
+}
 
 
-  .paper-header-menu .sub-menu li {
+.paper-header-menu .sub-menu li {
     display: block;
     padding: 10px 10px;
     margin: 5px;
     border-radius: 5px;
 
-  }
+}
 
 
-  
-  /* Style sub-menu links */
-  .paper-header-menu .sub-menu a {
+
+/* Style sub-menu links */
+.paper-header-menu .sub-menu a {
     text-decoration: none;
     color: #333
-    /* Sub-menu link color */
-  }
-  
-  /* Hover effect for sub-menu items */
-  .paper-header-menu .sub-menu li:hover {
+        /* Sub-menu link color */
+}
+
+/* Hover effect for sub-menu items */
+.paper-header-menu .sub-menu li:hover {
     background-color: #82c5c658;
 
     /* Change background color on hover */
-  }
+}
 
 .search-box-mobile-menu {
     width: 100%;
@@ -144,7 +174,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 10px 5px;
 }
 
 .header-content-vasutheme {
@@ -187,38 +217,38 @@
 
 @media only screen and (max-width: 767px) {
     .vasutheme-header1-menu {
-      display: none;
+        display: none;
     }
-  
-    .header1-search-box{
-      display: none;
+
+    .header1-search-box {
+        display: none;
     }
-  
+
     .vasutheme-header1-container {
-      width: 100%;
-      padding: 5px 20px;
-      background-color: rgb(255, 255, 255);
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-      display: flex;
-      /* Use flexbox to align items horizontally */
-      justify-content: space-between;
-      /* Spread items horizontally */
-      align-items: center;
+        width: 100%;
+        padding: 5px 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        display: flex;
+        /* Use flexbox to align items horizontally */
+        justify-content: space-between;
+        /* Spread items horizontally */
+        align-items: center;
     }
-  
+
     .vasu-theme-mobile-menu-header-1 {
-      display: inline-flex !important;
-      flex-direction: row;
-      
-      /* Hide mobile menu on small screens */
+        display: inline-flex !important;
+        flex-direction: row;
+
+        /* Hide mobile menu on small screens */
     }
-  
-  
-    .mobile-menu-search-box{
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-      margin-left: 21px;
-    
+
+
+    .mobile-menu-search-box {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 21px;
+
     }
-  }
+}
