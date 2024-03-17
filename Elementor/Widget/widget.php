@@ -618,7 +618,7 @@ class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
 
     // Define widget title
     public function get_title() {
-        return __( ' Nav Menu', 'elementor' );
+        return __( ' Nav Menu', 'paperx' );
     }
 
     // Define widget icon
@@ -636,14 +636,14 @@ class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_menu',
             [
-                'label' => __( 'Menu', 'elementor' ),
+                'label' => __( 'Menu', 'paperx' ),
             ]
         );
 
         $this->add_control(
             'menu',
             [
-                'label' => __( 'Select Menu', 'elementor' ),
+                'label' => __( 'Select Menu', 'paperx' ),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => $this->get_available_menus(),
                 'default' => '',
@@ -655,7 +655,7 @@ class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_style',
             [
-                'label' => __( 'Style', 'elementor' ),
+                'label' => __( 'Style', 'paperx' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -668,35 +668,42 @@ class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
     // Define widget content output
     protected function render() {
         $settings = $this->get_settings_for_display();
-
+    
         $menu_id = ! empty( $settings['menu'] ) ? $settings['menu'] : '';
-
-        if ( $menu_id ) {
+    
+        // Check if menu location is set
+        $theme_location = ! empty( $settings['theme_location'] ) ? $settings['theme_location'] : '';
+    
+        if ( $menu_id || $theme_location ) {
             ?>
             <nav class="paper-header-menu">
                 <?php
+                // Pass theme_location instead of menu ID directly
                 wp_nav_menu(array(
-                    'menu' => $menu_id,
+                    'theme_location' => $theme_location,
+                    'menu' => $menu_id, // Keep this for backward compatibility, if necessary
                     'container' => false,
                     'menu_class' => 'primary-menu',
                     'fallback_cb' => false,
                 ));
                 ?>
             </nav>
-
+    
             <div class='menu-mobile-icon'>
                 <img onclick="callHamburger()" class="image-menu-close-icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/Assets/Image/close.png" alt="">
                 <img class="image-menu-icon" onclick="callHamburger()" src="<?php echo esc_url(get_template_directory_uri()); ?>/Assets/Image/menu.png" alt="">
                 <div class="paper-header-menu-mobile">
-
+    
                     <div class='search-box-mobile-menu'>
                         <?php get_search_form(); ?>
                     </div>
-
+    
                     <nav class="mobile-nav">
                         <?php
+                        // Pass theme_location instead of menu ID directly
                         wp_nav_menu(array(
-                            'menu' => $menu_id,
+                            'theme_location' => $theme_location,
+                            'menu' => $menu_id, // Keep this for backward compatibility, if necessary
                             'container' => false,
                             'menu_class' => 'primary-menu',
                             'fallback_cb' => false,
@@ -708,7 +715,7 @@ class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
             <?php
         }
     }
-
+    
     // Get available menus
     protected function get_available_menus() {
         $menus = wp_get_nav_menus();
