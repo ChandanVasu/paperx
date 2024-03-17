@@ -18,11 +18,11 @@ function theme_setting_header() {
             <?php do_settings_sections('header_setup_group'); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row">Header vasutheme Template:</th>
+                    <th scope="row">Header PaperXTemplate:</th>
                     <td>
                         <input type="text" name="header_shortcode" value="<?php echo esc_attr(get_option('header_shortcode')); ?>"
-                            placeholder="Inter vasutheme Template ID" />
-                        <p class="description">Enter the Header vasutheme Template shortcode for the Header.</p>
+                            placeholder="Inter PaperXTemplate ID" />
+                        <p class="description">Enter the Header PaperXTemplate shortcode for the Header.</p>
                     </td>
                 </tr>
                 <tr valign="top">
@@ -93,7 +93,7 @@ add_action('admin_init', 'register_header_elementor_shortcode');
 function add_sticky_header_css() {
     $sticky_header_enabled = get_option('sticky_header_enabled');
     if ($sticky_header_enabled) {
-        echo '<style>.header-content-vasutheme { position: sticky; top: 0; z-index: 999; }</style>';
+        echo '<style>.header-content-PaperX{ position: sticky; top: 0; z-index: 999; }</style>';
     }
 }
 add_action('wp_head', 'add_sticky_header_css');

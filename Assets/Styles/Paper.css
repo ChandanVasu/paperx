@@ -17,13 +17,12 @@
 
 .admin_menu_sidebar h1 {
    cursor: pointer;
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 15px;
 
 }
 
 .admin_menu_sidebar a {
-
    text-decoration: none;
 }
 
@@ -51,7 +50,7 @@ a:focus {
 }
 
 .vasu_theme_setting_admin_menu h2 {
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-weight: 600;
    font-size: 20px;
    color: rgba(0, 0, 0, 0.778);
@@ -95,7 +94,7 @@ a:focus {
    color: black;
    font-size: 20px;
    margin: 0;
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-weight: bold;
 
 }
@@ -105,7 +104,7 @@ a:focus {
    margin-top: 2px;
    margin-bottom: 2px;
    width: 50%;
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -124,13 +123,13 @@ a:focus {
    padding: 10px !important;
 }
 
-.theme_header_setting .form-table td .radio-item{
+.theme_header_setting .form-table td .radio-item {
    margin-right: 20px;
    display: inline-flex;
-   gap : 20px;
+   gap: 20px;
    align-items: center;
    justify-content: center;
-   text-align: center;         
+   text-align: center;
 }
 
 .theme_header_setting .radio-item label {
@@ -176,7 +175,7 @@ a:focus {
 }
 
 .radio-item p {
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-weight: 600;
    font-size: 15px;
 }
@@ -227,8 +226,8 @@ input:focus+.slider {
 }
 
 .switch input:checked+.slider:before {
--webkit-transform: translate3d(20px, -50%, 0);
-transform: translate3d(20px, -0%, 0);
+   -webkit-transform: translate3d(20px, -50%, 0);
+   transform: translate3d(20px, -0%, 0);
 }
 
 /* Rounded sliders */
@@ -242,7 +241,8 @@ transform: translate3d(20px, -0%, 0);
 
 
 .theme_setting_logo input[type="file"] {
-   display: none; /* Hide the default file input */
+   display: none;
+   /* Hide the default file input */
 }
 
 .theme_setting_logo .upload-logo-btn {
@@ -255,12 +255,13 @@ transform: translate3d(20px, -0%, 0);
    border-radius: 5px;
    cursor: pointer;
 }
-.theme_setting_logo .form-table td{
+
+.theme_setting_logo .form-table td {
    display: inline-flex;
    align-items: center;
 }
 
-.logo-image{
+.logo-image {
    max-width: 201px;
    width: 123px;
    border-radius: 20px;
@@ -274,13 +275,14 @@ transform: translate3d(20px, -0%, 0);
 
 .theme_setting_logo .remove-logo-btn {
    display: inline-block;
-   margin-left: 10px; /* Adjust the margin as needed */
+   margin-left: 10px;
+   /* Adjust the margin as needed */
 }
 
 
 
- /* CSS styles */
- .theme_setting_single_post {
+/* CSS styles */
+.theme_setting_single_post {
    margin-top: 20px !important;
 }
 
@@ -345,14 +347,14 @@ transform: translate3d(20px, -0%, 0);
 }
 
 .radio-item p {
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-weight: 600;
    font-size: 15px;
 }
 
 
- /* CSS styles */
- .theme_setting_archive {
+/* CSS styles */
+.theme_setting_archive {
    margin-top: 20px !important;
 }
 
@@ -411,7 +413,7 @@ transform: translate3d(20px, -0%, 0);
 }
 
 .radio-item p {
-    font-family: sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-weight: 600;
    font-size: 15px;
 }

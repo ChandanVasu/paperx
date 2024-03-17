@@ -17,7 +17,7 @@ class Custom_Title_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __('Custom Title', 'paperx');
+        return __('Heading', 'paperx');
     }
 
     public function get_icon() {

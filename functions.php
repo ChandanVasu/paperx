@@ -31,10 +31,10 @@ add_action('wp_enqueue_scripts', function () {
 
 function theme_options_page() {
     ?>
-    <div class="theme-options-content">
-        <?php get_template_part('Inc/Theme Setting/Theme-Setting-Template-File/Theme-Setting'); ?>
-    </div>
-    <?php
+<div class="theme-options-content">
+    <?php get_template_part('Inc/Theme Setting/Theme-Setting-Template-File/Theme-Setting'); ?>
+</div>
+<?php
 }
 
 function register_theme_options_menu() {
@@ -56,34 +56,9 @@ include_once get_template_directory() . '/Inc/Theme Setting/single.php';
 include_once get_template_directory() . '/Inc/Theme Setting/footer.php';
 include_once get_template_directory() . '/Inc/Theme Setting/archive.php';
 include_once get_template_directory() . '/Inc/Demo.php';
+include_once get_template_directory() . '/Elementor/paperx-adon.php';
 
-function register_vasutheme_widget($widgets_manager) {
 
-    require_once(__DIR__ . '/Elementor/widget.php');
-    require_once(__DIR__ . '/Elementor/Grid-Post-1.php');
-    require_once(__DIR__ . '/Elementor/List-Post-1.php');
-    require_once(__DIR__ . '/Elementor/author.php');
-    require_once(__DIR__ . '/Elementor/Grid-Post-2.php');
-    require_once(__DIR__ . '/Elementor/Heading-Title-Elementor.php');
-    require_once(__DIR__ . '/Elementor/Single-Post-Content.php');
-
-    $widgets_manager->register(new \Custom_Post_Share_Widget());
-    $widgets_manager->register(new \List_Post_1());
-    $widgets_manager->register(new \Post_Title_Widget());
-    $widgets_manager->register(new \Grid_Post_1());
-    $widgets_manager->register(new \Grid_Post_2());
-    $widgets_manager->register(new \Custom_Title_Widget());
-    $widgets_manager->register(new \Single_Post_Content_Widget());
-    $widgets_manager->register(new \Author_Info_Widget());
-    $widgets_manager->register(new \Comment_Widget());
-    $widgets_manager->register(new \Post_Thumbnail_Widget());
-    $widgets_manager->register(new \Post_Meta_Widget());
-    $widgets_manager->register(new \Breadcrumb_Widget());
-    $widgets_manager->register(new \Post_Excerpt_Widget());
-    $widgets_manager->register(new \Custom_Nav_Menu_Widget());
-
-}
-add_action('elementor/widgets/register', 'register_vasutheme_widget');
 
 function add_elementor_widget_categories($elements_manager) {
 
@@ -110,6 +85,8 @@ function enqueue_styles_and_scripts() {
     wp_enqueue_style('Header css', get_template_directory_uri() . '/Assets/Styles/Header/header.css');
     wp_enqueue_style('Theme', get_template_directory_uri() . '/Assets/Styles/main.css');
     wp_enqueue_style('Single Post ', get_template_directory_uri() . '/Assets/Styles/Theme/singlepost.css');
+    wp_enqueue_style('Commnet Post ', get_template_directory_uri() . '/Assets/Styles/Theme/comment.css');
+
 
     wp_enqueue_script('footer-script', get_template_directory_uri() . '/Assets/script/main.js');
 }

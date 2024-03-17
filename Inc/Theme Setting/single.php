@@ -21,12 +21,12 @@ function theme_setting_single_post() {
         <?php do_settings_sections('single_post_setup_group'); ?>
         <table class="form-table">
             <tr valign="top">
-                <th scope="row">Single Post vasutheme Template :</th>
+                <th scope="row">Single Post PaperXTemplate :</th>
                 <td>
                     <input type="text" name="single_post_elementor_shortcode"
                         value="<?php echo esc_attr(get_option('single_post_elementor_shortcode')); ?>"
-                        placeholder="Inter vasutheme Template ID" />
-                    <p class="description">Enter the vasutheme Template shortcode for the single post here.</p>
+                        placeholder="Inter PaperXTemplate ID" />
+                    <p class="description">Enter the PaperXTemplate shortcode for the single post here.</p>
                 </td>
             </tr>
             <tr valign="top">

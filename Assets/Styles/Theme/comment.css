@@ -1,0 +1,206 @@
+.comment-form {
+    margin-top: 20px;
+  }
+  
+  /* Styling the input fields */
+  .comment-form input[type="text"],
+  .comment-form input[type="email"],
+  .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styling the submit button */
+  .comment-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling the submit button on hover */
+  .comment-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling the comment form labels */
+  .comment-form label {
+    font-weight: bold;
+  }
+  
+  /* Styling the comment form required field indicator */
+  .comment-form span.required {
+    color: red;
+  }
+  /* Styling the container for name and email fields */
+  .comment-form-author-email {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+  
+  }
+  
+  /* Adjusting width for each input field */
+  .comment-form-author-email input[type="text"],
+  .comment-form-author-email input[type="email"] {
+    font-family: sans-serif;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
+  }
+  
+  
+  /* Styling the comment list */
+  .comment-list {
+    list-style: none;
+    padding: 10px;
+    /* background-color: #cdcdcd; */
+    border-radius: 10px;
+  }
+  
+  /* Styling each comment */
+  .comment {
+  
+    padding: 10px 0;
+  }
+  
+  /* Styling the comment author image */
+  .comment .avatar {
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: fill;
+  }
+  
+  /* Styling the comment content */
+  .comment .comment-content {
+    flex: 1;
+  }
+  
+  /* Styling the comment author name */
+  .comment .comment-author {
+    font-style: normal;
+  
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling the comment date */
+  .comment .commentmetadata a {
+    float: right;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    display: none;
+    margin-top: -33px;
+  }
+  
+  .comment .commentmetadata{
+    display: none;
+  }
+  
+  .comment .commentmetadata .comment-edit-link{
+    display: none;
+  }
+  
+  cite { 
+    font-style: normal;
+  }
+  
+  .says{
+    display: none;
+  }
+  
+  .comment-author .fn{
+    text-decoration: none;
+  }
+  
+  .comment p{
+    font-family: sans-serif;
+    margin-left: 56px;
+    /* margin-top: -10px; */
+  }
+  
+  .comment .reply{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-top: 5px;
+  margin-left: 50px;
+  }
+  
+  .comment-respond .comment-reply-title {
+    margin-top: 20px;
+    font-family: sans-serif;
+  
+  }
+  .comment .children{
+    margin-left: 60px;
+  }
+  
+  .comment .comment-body{
+    border-radius: 10px;
+    /* background-color: #fff; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
+    padding: 10px;
+  }
+  
+  .comment-respond .comment-notes, .comment-respond .logged-in-as{
+    display: block;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: -14px;
+  }
+  
+  .comment-respond .comment-form-cookies-consent {
+    display: block;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling the comment form placeholder and text font */
+  .comment-form-comment textarea::placeholder,
+  .comment-form-comment textarea {
+    font-family: sans-serif;
+      font-size: 14px; /* Change the font size as needed */
+      color: #666; /* Change the text color as needed */
+  }
+  
+  .comment-form-comment textarea {
+      /* Additional styling for the comment textarea if required */
+      border: 0px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      padding: 8px;
+      background-color: transparent;
+      border-radius: 8px;
+      width: 100%; /* Adjust the width as needed */
+      height: 150px; /* Adjust the height as needed */
+      resize: vertical;
+  
+  }
+  
+  .comment-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-form input[type="submit"]:hover{
+    background-color: #fd0000;
+  
+  }

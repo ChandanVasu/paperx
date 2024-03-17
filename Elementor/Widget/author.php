@@ -9,7 +9,7 @@ class Custom_Post_Share_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Custom Post Share Widget', 'paperx' );
+        return __( 'Post Share', 'paperx' );
     }
 
     // Widget Icon (Optional)

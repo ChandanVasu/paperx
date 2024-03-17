@@ -10,7 +10,7 @@ class Author_Info_Widget extends \Elementor\Widget_Base {
 
     // Widget Title
     public function get_title() {
-        return __( 'Author Info Widget', 'paperx' );
+        return __( 'Author Info', 'paperx' );
     }
 
     // Widget Icon (Optional)
@@ -152,11 +152,11 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Thumbnail Widget', 'paperx' );
+        return __( 'Post Thumbnail', 'paperx' );
     }
 
     public function get_icon() {
-        return 'eicon-post-list';
+        return 'eicon-image-rollover';
     }
 
     public function get_categories() {
@@ -241,9 +241,10 @@ class Post_Thumbnail_Widget extends \Elementor\Widget_Base {
         } else {
             // Output a placeholder if no thumbnail is set
             echo '<div class="post-thumbnailss-single1">';
-            echo '<img src="http://localhost/wordpress1/wp-content/uploads/2024/03/ssc-20240306-s00108h.jpg" alt="' . esc_attr(get_the_title()) . '" />';
+            echo '<img src="' . esc_url(get_template_directory_uri()) . '/Assets/Image/noimage.jpg" alt="No Image">';
             echo '</div>';
         }
+        
     }
 }
 
@@ -261,7 +262,7 @@ class Post_Title_Widget extends \Elementor\Widget_Base{
     }
 
     public function get_icon() {
-        return 'eicon-post-title';
+        return 'eicon-editor-h1';
     }
 
     public function get_categories() {
@@ -496,7 +497,7 @@ class Post_Excerpt_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_icon() {
-        return 'eicon-post-list';
+        return 'eicon-editor-paragraph';
     }
 
     public function get_categories() {
@@ -617,7 +618,7 @@ class Custom_Nav_Menu_Widget extends \Elementor\Widget_Base {
 
     // Define widget title
     public function get_title() {
-        return __( 'Custom Nav Menu', 'elementor' );
+        return __( ' Nav Menu', 'elementor' );
     }
 
     // Define widget icon
